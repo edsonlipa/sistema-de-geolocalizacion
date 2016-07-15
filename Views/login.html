@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Fullscreen Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        
+        <link rel="stylesheet" href="../Resources/css/reset.css">
+        <link rel="stylesheet" href="../Resources/css/supersized.css">
+        <link rel="stylesheet" href="../Resources/css/style.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="page-container">
+            <h1>Login</h1>
+            <form action="" method="post">
+                <input type="text" name="username" class="username" id="username" placeholder="Usuario">
+                <input type="password" name="password" class="password" id="password" placeholder="Password">
+                <button type="button" onclick="confirmar()">Sign me in</button>
+                <div class="error"><span>+</span></div>
+            </form>
+            
+        </div>
+
+        <!-- Javascript -->
+        <script src="../Resources/js/jquery-1.11.2.js"></script>
+        <script src="../Resources/js/supersized.3.2.7.min.js"></script>
+        <script src="../Resources/js/supersized-init.js"></script>
+        <script src="../Resources/js/scripts.js"></script>
+        <script type="text/javascript">
+            function confirmar() {
+                var username =$('#username').val();
+                var password =$('#password').val();
+                $.ajax({
+                    url:'../Controller/usuario.php',
+                    type:'POST',
+                    data:'usuario='+username+'&password='+password+"&boton=ingresar"
+                }).done(function(resp){
+                     if(resp=='0'){
+                    $('#error').show();
+                    }else{
+                        
+                        if (resp=='usuario estandar') 
+                        {
+                            location.href='../Views/usuario_estandar.php';
+                         }
+                        else
+                        {
+                            location.href='../Views/administrador.php';
+                        }
+                    }
+
+                })};
+        </script>
+
+    </body>
+
+</html>
+
