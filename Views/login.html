@@ -45,15 +45,21 @@
             function confirmar() {
                 var username =$('#username').val();
                 var password =$('#password').val();
+                
+                var datos = {
+                    "usuario": username,
+                    "password": password,
+                    "boton": "ingresar"
+                    }
                 $.ajax({
                     url:'../Controllers/usuario.php',
                     type:'POST',
-                    data:'usuario='+username+'&password='+password+"&boton=ingresar"
+                    data: datos
                 }).done(function(resp){
                     if(resp=='0'){
                         $('#error').show();}
                     else{
-                        alert('el usuario es un '+resp);
+                        
                         if (resp=='usuario estandar') 
                         {
                             location.href='../Views/usuario_estandar.php';
