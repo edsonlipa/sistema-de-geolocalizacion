@@ -1,3 +1,4 @@
 -5 de julio lo primero que tenemos es el script de la base de datos "geolocaliazcion.sql" para phpmyadmin
 -crear una base de datos llamada geolocalizacion y importar el archivo sql
 -aun hay archivos que no son indispensables para el proyecto, ire optimisando estoa media que avance el proyecto
+-problema con carpeta Controllers
