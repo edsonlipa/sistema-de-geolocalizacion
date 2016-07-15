@@ -46,14 +46,14 @@
                 var username =$('#username').val();
                 var password =$('#password').val();
                 $.ajax({
-                    url:'../Controller/usuario.php',
+                    url:'../Controllers/usuario.php',
                     type:'POST',
                     data:'usuario='+username+'&password='+password+"&boton=ingresar"
                 }).done(function(resp){
-                     if(resp=='0'){
-                    $('#error').show();
-                    }else{
-                        
+                    if(resp=='0'){
+                        $('#error').show();}
+                    else{
+                        alert('el usuario es un '+resp);
                         if (resp=='usuario estandar') 
                         {
                             location.href='../Views/usuario_estandar.php';
@@ -63,7 +63,6 @@
                             location.href='../Views/administrador.php';
                         }
                     }
-
                 })};
         </script>
 

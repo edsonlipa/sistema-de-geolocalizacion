@@ -1,16 +1,17 @@
 <?php
 		require_once('../Models/usuario.php');
 		$boton=$_POST['boton'];
+		
 		if ($boton=='cerrar') 
 		{
-			echo "se cerrar la conexion";
-			session_start();
-			session_destroy();
 			
+			session_start();
+			session_unset();
+			session_destroy();
+			echo "se cerrar la conexion";
 		}
 		else
 		{
-			echo "entre";
 			$usuario=$_POST['usuario'];
 			$password=$_POST['password'];
 			

@@ -58,13 +58,12 @@ session_start();
     <script>
         function cerrar()
         {
-            
             $.ajax({
                 url:'../Controllers/usuario.php',
                 type:'POST',
                 data:"boton=cerrar"
             }).done(function(resp){
-                alert(resp);
+                
                 location.href = '../Views/login.html';
             });
         }
