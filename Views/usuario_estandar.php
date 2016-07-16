@@ -30,7 +30,8 @@ session_start();
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['nombre']; ?></a>
+                <li><!-- <span class="glyphicon glyphicon-user">…</span> --> 
+                <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['nombre']; ?></a>
                      <ul class="dropdown-menu">
                         <li><a href="javascript: void(0)" onclick='cerrar()'>Cerrar Session</a></li>
                      
@@ -42,19 +43,71 @@ session_start();
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Bienvenido</div>
-                    <div class="panel-body">                     
-                      <p>Estas a dentro!</p>
+            <div class="col-xs-12 col-sm-5 col-md-5" style=" height: 800px;">
+                <button class="btn btn-primary" onclick="marcador()">poner marcador</button>
+                <h1>Geolocalizacion</h1>
+                <form>
+                    <input type="checkbox"> Buscar por Conductor
+                    <div class="form-group">
+                        <label for="person_name">busar por nombre</label>
+                        <input  class="form-control" id="person_name" placeholder="nombre">
                     </div>
-                </div>
+                     <input type="checkbox"> Buscar por Auto
+                    <div class="form-group">
+                        <label for="placa_number">Placa</label>
+                        <input  class="form-control" id="placa_number" placeholder="Placa del auto">
+                    </div>
+                    <input type="checkbox"> buscar por fecha
+                    <!-- busqueda por fecha -->
+                    <div class="form-group">
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-6"  >
+                            <label for="start_date">desde</label>
+                            <div class='input-group date'>
+                                <input type="date" class="form-control" id="start_date" >
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+
+                            <!-- <div class='input-group time'>
+                                <input type="time" class="form-control" id="start_time" >
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div> -->
+                        </div>
+                        <!-- ************************************** -->
+                        <div class="col-xs-12 col-sm-6 col-md-6"  >
+                            <label for="end_date">hasta</label>
+                            <div class='input-group date' >
+                                <input type='date' class="form-control " id="end_date"/>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            <!-- <div class='input-group time'>
+                                <input type="time" class="form-control" id="end_time" >
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div> -->
+                        </div>
+                       
+                    </div>  
+                    <p> agregar espacio</p>                
+                  <button type="button" class="btn btn-info btn-lg">Buscar</button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-7" id="mapa" style=" height: 800px;">
+
             </div>
         </div>
     </div>
     <script src="../Resources/js/jquery-1.11.2.js"></script>
     <script src="../Resources/js/bootstrap.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBytmL0QWxThFrzdKcmzoVMnX8AUO37aEc&callback=iniciar"></script>
     <script>
         function cerrar()
         {
@@ -67,6 +120,25 @@ session_start();
                 location.href = '../Views/login.html';
             });
         }
+    </script>
+    <script type="text/javascript">
+        
+        var map;
+        var myCenter
+        function iniciar() {
+        myCenter=new google.maps.LatLng(-16.4045861,-71.5311351);
+        map = new google.maps.Map(document.getElementById('mapa'), {
+            center: myCenter,
+            zoom: 15
+        });
+        }
+        function marcador(){
+            myCenter=new google.maps.LatLng(-16.4045861,-71.5311351);
+            var marker=new google.maps.Marker({
+            position:myCenter,
+             });
+              marker.setMap(map);
+        }     
     </script>
 </body>
 </html>
