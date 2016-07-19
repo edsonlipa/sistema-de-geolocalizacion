@@ -67,6 +67,13 @@ class obj_auto
     {
         $this->placa = $placa;
     }
-
+    public function unsetAuto()
+    {
+        $this->placa=null;
+        $this->codicono=null;
+        $this->color=null;
+        $this->foto=null;
+        $this->marca=null;
+    }
 
 }
