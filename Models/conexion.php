@@ -5,6 +5,7 @@
 		private $usuario;
 		private $contraseña;
 		private $basedatos;
+        private $flag=false;
 		public  $conexion;
 
 		public function __construct(){
@@ -12,6 +13,7 @@
 			$this->usuario	  = "root";
 			$this->contraseña = "";
 			$this->basedatos  = "geolocalizacion";
+            $this->flag=true;
 
 		}
 
@@ -20,7 +22,10 @@
 		}
 
 		function cerrar(){
-			$this->conexion->close();
+            if($this->flag==true)
+            {
+                $this->conexion->close();
+            }
 		}
 	}
 	
