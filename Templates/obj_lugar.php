@@ -66,5 +66,13 @@ class obj_lugar
     {
         $this->codLugar = $codLugar;
     }
+    public function unsetLugar()
+    {
+        $this->id=null;
+        $this->nomLugar=null;
+        $this->latitud=null;
+        $this->longitud=null;
+        $this->codLugar=null;
+    }
 
 }

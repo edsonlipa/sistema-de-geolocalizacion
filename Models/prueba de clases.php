@@ -45,3 +45,13 @@ foreach ($lista as $person)
 }
  * *******************************************************************************************
  */
+$modelopersona=new modelo_persona();
+$persona=new obj_persona();
+$persona->setLicencia("Q85741132");
+$persona->setNombre("ruth");
+$persona->setApellido("huillca");
+$persona->setDireccion("Cerro colorado");
+$persona->setCelular("654654654");
+$persona->setEmail("ruht@gmail.com");
+$persona->setFoto("ruth.jpg");
+echo $modelopersona->agregarPersona($persona);
