@@ -1,7 +1,6 @@
-
-<?php 
+<?php
 session_start();
-  if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& $_SESSION['tipo']=='usuario estandar') 
+  if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& ($_SESSION['tipo']=='usuario estandar'||$_SESSION['tipo']=='administrador'))
   {?>
     <!DOCTYPE html>
 <html lang="en">
@@ -30,14 +29,14 @@ session_start();
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><!-- <span class="glyphicon glyphicon-user">…</span> --> 
+                <li><!-- <span class="glyphicon glyphicon-user">…</span> -->
                 <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['nombre']; ?></a>
                      <ul class="dropdown-menu">
                         <li><a href="javascript: void(0)" onclick='cerrar()'>Cerrar Session</a></li>
-                     
+
                     </ul>
                 </li>
-                
+
             </ul>
         </div>
     </nav>

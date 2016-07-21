@@ -51,14 +51,15 @@
                     data:'usuario='+username+'&password='+password+"&boton=ingresar"
                 }).done(function(resp){
                     if(resp=='0'){
-                        $('#error').show();}
+                        $('#error').show();
+                        location.href='../Views/login.html';}
                     else{
                         alert('el usuario es un '+resp);
                         if (resp=='usuario estandar') 
                         {
                             location.href='../Views/usuario_estandar.php';
                          }
-                        else
+                        else if(resp=='administrador')
                         {
                             location.href='../Views/administrador.php';
                         }

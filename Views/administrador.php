@@ -1,7 +1,7 @@
 
-<?php 
+<?php
 session_start();
-  if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES') 
+  if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& $_SESSION['tipo']=='administrador')
   {?>
     <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@ session_start();
     <link rel="stylesheet" href="../Resources/css/bootstrap.min.css">
 
 </head>
- 
+
 <body>
     <!--Barra de Navegacion-->
     <nav class="navbar navbar-default">
@@ -37,11 +37,13 @@ session_start();
 
                     </ul>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
-
+    <div class="container">
+        <?php include("navigator.php")?>
+    </div>
     <script src="../Resources/js/jquery-1.11.2.js"></script>
     <script src="../Resources/js/bootstrap.min.js"></script>
     <script>
@@ -67,4 +69,3 @@ session_start();
     header("location: ./");
   }
  ?>
-    
