@@ -44,6 +44,7 @@ session_start();
         <div class="row">
             <div class="col-xs-12 col-sm-5 col-md-5" style=" height: 800px;">
                 <button class="btn btn-primary" onclick="marcador()">poner marcador</button>
+                <button class="btn btn-primary" onclick="enrutar()">enrutar</button>
                 <h1>Geolocalizacion</h1>
                 <form>
                     <input type="checkbox"> Buscar por Conductor
@@ -106,7 +107,7 @@ session_start();
     <script src="../Resources/js/jquery-1.11.2.js"></script>
     <script src="../Resources/js/bootstrap.min.js"></script>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBytmL0QWxThFrzdKcmzoVMnX8AUO37aEc&callback=iniciar"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD192AY4NxJxc8m55g4hrWzSAVVd6_XXf4&callback=iniciar"></script>
     <script>
         function cerrar()
         {
@@ -124,6 +125,8 @@ session_start();
         
         var map;
         var myCenter
+        var myCenter1
+        var myCenter2
         function iniciar() {
         myCenter=new google.maps.LatLng(-16.4045861,-71.5311351);
         map = new google.maps.Map(document.getElementById('mapa'), {
@@ -132,12 +135,44 @@ session_start();
         });
         }
         function marcador(){
-            myCenter=new google.maps.LatLng(-16.4045861,-71.5311351);
+            myCenter1=new google.maps.LatLng(-16.406285, -71.524262);
             var marker=new google.maps.Marker({
-            position:myCenter,
+            position:myCenter1
              });
               marker.setMap(map);
-        }     
+            
+            myCenter2=new google.maps.LatLng(-16.404865, -71.532315);
+            var marker1=new google.maps.Marker({
+                position:myCenter2
+            });
+            marker1.setMap(map);
+        }
+
+        function enrutar() {
+            myCenter1=new google.maps.LatLng(-16.406285, -71.524262);
+            myCenter2=new google.maps.LatLng(-16.404865, -71.532315);
+            var objConfigDR
+                = {
+                origin:map
+            };
+            var objConfigDS = {
+                origin:'Lambramani 112, Arequipa',
+                destination:'Paucarpata 302, Arequipa',
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRender = new google.maps.DirectionsRenderer(objConfigDR);
+
+            directionsService.route(objConfigDS, function(resultado, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsRender.setDirections(resultado);
+                    alert('exito');
+                }
+                else{
+                    alert('error'+status);
+                }
+            });
+        }
     </script>
 </body>
 </html>

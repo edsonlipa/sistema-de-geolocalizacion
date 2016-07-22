@@ -1,7 +1,7 @@
 <?php
 require("../Templates/obj_conduce.php");
 require("conexion.php");
-//el modelo de trakeo aunesta inconplto no debe de usarse
+
 class modelo_conduce
 {
     private $obj_conexion;
@@ -11,23 +11,20 @@ class modelo_conduce
         $this->obj_conexion=new conexion();
     }
 
-    public function getTrakeoBycodigo($codigo)
+    public function getConduceById($id)
     {
         $this->obj_conexion->conectar();
-        $sql="select * from trakeo WHERE codigo='$codigo'";
+        $sql="select * from conduce WHERE id='$id'";
         $result=$this->obj_conexion->conexion->query($sql);
         $num_rows=mysqli_num_rows($result);
         if($num_rows>0)
         {
             $row=mysqli_fetch_row($result);
-            $trakeo=new obj_trakeo();
-            $trakeo->setCodigo($row[0]);
-            $trakeo->setPlacaT($row[1]);
-            $trakeo->setCodLugarT($row[2]);
-            $trakeo->setFecha($row[3]);
-            $trakeo->setHora($row[4]);
-            $trakeo->setVelocidad($row[5]);
-            return $trakeo;
+            $conduce=new obj_conduce();
+            $conduce->setIdC($row[0]);
+            $conduce->setLicenciaC($row[1]);
+            $conduce->setPlacaC($row[2]);
+            return $conduce;
         }
         else{
             return 0;
@@ -35,14 +32,14 @@ class modelo_conduce
         $this->obj_conexion->cerrar();
     }
     /////////////////////////////////////////////////////////////////////
-    //                       agreagar formas diferente de agreger por objeton trakeo o con objetos auto y persona
+    //                       agreagar formas diferente de agreger por objeton conduce o con objetos auto y persona
     /////////////////////////////////////////////////////////////////////
-    public function agregarTrakeo(obj_persona $persona,obj_auto $auto)
+    public function agregarConduce(obj_persona $persona,obj_auto $auto)
     {
         $this->obj_conexion->conectar();
         $licencia=$persona->getLicencia();
         $placa=$auto->getPlaca();
-        $tabla="INSERT INTO trakeo (codigo, licencia, placa) ";
+        $tabla="INSERT INTO conduce (id, licencia, placa) ";
         $valores="VALUES (NULL,'$licencia','$placa');";
         $sql=$tabla.$valores;
 
@@ -53,16 +50,16 @@ class modelo_conduce
         return $result;
         $this->obj_conexion->cerrar();
     }
-    public function actualizarTrakeo(obj_trakeo $trakeo){
+    public function actualizarConduce(obj_conduce $conduce){
         $this->obj_conexion->conectar();
-        $codigo=$trakeo->getcodigoC();
-        $licencia=$trakeo->getLicenciaC();
-        $placa=$trakeo->getPlacaC();
+        $id=$conduce->getIdC();
+        $licencia=$conduce->getLicenciaC();
+        $placa=$conduce->getPlacaC();
 
 
 
-        $sql="UPDATE trakeo SET codigo = '$codigo',
-              licencia='$licencia',placa='$placa' WHERE codigo = '$codigo';";
+        $sql="UPDATE conduce SET id = '$id',
+              licencia='$licencia',placa='$placa' WHERE id = '$id';";
 
         $result=$this->obj_conexion->conexion->query($sql);
         if(!$result){
@@ -71,21 +68,21 @@ class modelo_conduce
         return $result;
         $this->obj_conexion->cerrar();
     }
-    public function eliminarByObjeto(obj_trakeo &$trakeo){
+    public function eliminarByObjeto(obj_conduce &$conduce){
         $this->obj_conexion->conectar();
-        $codigo=$trakeo->getcodigoC();
-        $query="DELETE FROM trakeo where licencia='$codigo';";
+        $id=$conduce->getIdC();
+        $query="DELETE FROM conduce where licencia='$id';";
         $result=$this->obj_conexion->conexion->query($query);
         if(!$result){
-            $trakeo->unsettrakeo();
+            $conduce->unsetConduce();
             return 0;
         }
         $this->obj_conexion->cerrar();
         return $result;
     }
-    public function eliminarByCodigo($codigo){
+    public function eliminarById($id){
         $this->obj_conexion->conectar();
-        $query="DELETE FROM trakeo where codigo='$codigo';";
+        $query="DELETE FROM conduce where id='$id';";
         $result=$this->obj_conexion->query($query);
         if(!$result){
             return 0;
