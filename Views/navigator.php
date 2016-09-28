@@ -1,43 +1,45 @@
-
-<?php
-//session_start();
-if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& $_SESSION['tipo']=='administrador')
-{?>
-
-		<div id="wrapper" style="width:20%;margin-top:60px;display:inline-block;">
-			<div id="sidebar-wrapper" class="sidebar">
-				<ul class="nav nav-sidebar" style="height:630px;">
-
-					<li class="first"><a href=""><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Inicio</a></li>
-
-					<li class="submenu-header">
-						<a href="nuevaPersona.php"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Persona</a></li>
-					</li>
-
-					<li class="submenu-header">
-						<a href="nuevolugar.php"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>Lugar</a>
-					</li>
-
-					<li class="submenu-header">
-						<a href="nuevoAuto.php"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>Auto</a>
-					</li>
-
-					<li class="submenu-header active">
-						<a href="nuevoUsuario.php" <span class="glyphicon glyphicon-list" aria-hidden="true"></span>	Usuarios</a>
-
-					</li>
-					<li class="first"><a href=""><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>Icono</a></li>
-				</ul>
-			</div>
-		</div>
-
-
-
-	<?php
-
-}
-else
-{
-	header("location: ./");
-}
-?>
+<nav class="menu">
+                            <ul class="nav metismenu" id="sidebar-menu">
+                                <li class="active">
+                                    <a href="administrador.php"> <i class="fa fa-home"></i> Home Admin </a>
+                                </li>
+                                <li>
+                                    <a href=""> <i class="fa fa-male"></i> Conductores <i class="fa arrow"></i> </a>
+                                    <ul>
+                                        <li> <a href="Personas.php">
+                                    Administrar Conductores
+                                </a> </li>
+                                        <li> <a href="nuevaPersona.php">
+                                    Agregar Conductor
+                                </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""> <i class="fa fa-dashboard"></i> Autos <i class="fa arrow"></i> </a>
+                                    <ul>
+                                        <li> <a href="Autos.php">
+                                    Administrar Autos
+                                </a> </li>
+                                        <li> <a href="nuevoAuto.php">
+                                    Agregar Auto
+                                </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""> <i class="fa fa-users"></i> Usuarios <i class="fa arrow"></i> </a>
+                                    <ul>
+                                        <li> <a href="Usuarios.php">
+                                    Administrar Usuarios
+                                </a> </li>
+                                        <li> <a href="NuevoUsuario.php">
+                                    Agregar Usuario
+                                </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="Aplicacion_Ustandar.php"> <i class="fa fa-map-marker"></i> Aplicacion </a>
+                                </li>
+                                
+            
+                            </ul>
+                        </nav>

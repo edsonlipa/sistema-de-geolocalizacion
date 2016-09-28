@@ -70,7 +70,7 @@ class modelo_persona
         $foto=$persona->getFoto();
 
 
-        $tabla="INSERT INTO persona (licencia, nombre, apellido, direccion, celular, email, foto) ";
+        $tabla="INSERT INTO persona (licencia, nombre, apellido, celular, direccion, email, foto) ";
         $valores="VALUES ('$licencia','$nombre', '$apellido', '$celular','$direccion','$email','$foto');";
         $sql=$tabla.$valores;
 
@@ -119,7 +119,7 @@ class modelo_persona
     public function eliminarByLicencia($licencia){
         $this->obj_conexion->conectar();
         $query="DELETE FROM persona where licencia='$licencia';";
-        $result=$this->obj_conexion->query($query);
+        $result=$this->obj_conexion->conexion->query($query);
         if(!$result){
             return 0;
         }
@@ -151,5 +151,30 @@ class modelo_persona
             echo 'no hay resultados';
         }
     }
+    public function conincidenciasPersonabyLicencia($par)
+    {
+        $this->obj_conexion->conectar();
 
+        $personas=array();
+        $sql="SELECT * FROM persona WHERE licencia LIKE '%$par%'";
+        $result= $this->obj_conexion->conexion->query($sql);
+        if($result){
+            while ($row = mysqli_fetch_array($result)) {
+                $persona=new obj_persona();
+                $persona->setLicencia($row[0]);
+                $persona->setNombre($row[1]);
+                $persona->setApellido($row[2]);
+                $persona->setDireccion($row[3]);
+                $persona->setCelular($row[4]);
+                $persona->setEmail($row[5]);
+                $persona->setFoto($row[6]);
+                $personas[]=$persona;
+            }
+            return $personas;
+        }
+        else{
+            return 0;
+            echo 'no hay resultados';
+        }
+    }
 }

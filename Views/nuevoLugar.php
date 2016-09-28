@@ -39,6 +39,7 @@ if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& $_SESSION['tipo
             </ul>
         </div>
     </nav>
+    <div class="container">
     <?php
     include_once "navigator.php";
 
@@ -104,6 +105,7 @@ if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& $_SESSION['tipo
                 </div>
             </div>
         </div>
+    </div>
     </body>
     </html>
     <?php

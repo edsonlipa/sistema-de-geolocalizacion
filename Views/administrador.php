@@ -3,50 +3,85 @@
 session_start();
   if (isset($_SESSION['ingreso']) && $_SESSION['ingreso']=='YES'&& $_SESSION['tipo']=='administrador')
   {?>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aplicacion Web</title>
+    <!doctype html>
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <link rel="stylesheet" href="../Resources/css/bootstrap.min.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> ModularAdmin - Free Dashboard Theme | HTML Version </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="../Resources/css/vendor.css">
+        <!-- Theme initialization -->
+        <link rel="stylesheet" id="theme-style" href="../Resources/css/app.css">
+    </head>
 
-</head>
-
-<body>
-    <!--Barra de Navegacion-->
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Cambiar Navegacion</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">AplicacionWeb</a>
+    <body>
+        <div class="main-wrapper">
+            <div class="app" id="app">
+                <header class="header">
+                    <div class="header-block header-block-collapse hidden-lg-up"> <button class="collapse-btn" id="sidebar-collapse-btn">
+                <i class="fa fa-bars"></i>
+            </button> </div>
+                    
+                    
+                    <div class="header-block header-block-nav">
+                        <ul class="nav-profile">
+                            <li class="profile dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user"></i> <span class="name">
+                        <?php echo $_SESSION['nombre']; ?>
+                    </span> </a>
+                                <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <a class="dropdown-item" href="login.html"> <i class="fa fa-power-off icon" onclick='cerrar()'></i> Logout </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <aside class="sidebar">
+                    <div class="sidebar-container">
+                        <div class="sidebar-header">
+                            <div class="brand">
+                                <div class="logo"> <span class="l l1"></span> <span class="l l2"></span> <span class="l l3"></span> <span class="l l4"></span> <span class="l l5"></span> </div> Geolocalizacion </div>
+                        </div>
+                        <!--navegador contiene los botones-->
+                        <?php
+                        include_once "navigator.php";
+                        ?>
+                    </div>
+                    
+                </aside>
+                <div class="sidebar-overlay" id="sidebar-oaverlay"></div>
+                <article class="content dashboard-page">
+                    
+                    <section class="section">
+                        
+                    </section>
+                </article>
+                <footer class="footer">
+                    <div class="footer-block buttons">  </div>
+                    <div class="footer-block author">
+                        <ul>
+                            <li> created by <a>Edson Lipa Urbina</a> </li>
+                            <li> <a>Ruth</a> </li>
+                            <li> <a>willy</a> </li>
+                            <li> <a>Milagros</a> </li>
+                        </ul>
+                    </div>
+                </footer>
+              
+            </div>
         </div>
-
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><!-- <span class="glyphicon glyphicon-user">…</span> -->
-                    <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['nombre']; ?></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="javascript: void(0)" onclick='cerrar()'>Cerrar Session</a></li>
-
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <?php include("navigator.php")?>
-    </div>
-    <script src="../Resources/js/jquery-1.11.2.js"></script>
-    <script src="../Resources/js/bootstrap.min.js"></script>
-    <script>
+        <!-- Reference block for JS -->
+       
+        <script src="../Resources/js/vendor.js"></script>
+        <script src="../Resources/js/app.js"></script>
+        <script>
         function cerrar()
         {
             $.ajax({
@@ -54,13 +89,13 @@ session_start();
                 type:'POST',
                 data:"boton=cerrar"
             }).done(function(resp){
-                location.href = '../Views/'
+                location.href = '../Views/login.html'
             });
         }
     </script>
-</body>
-</html>
+    </body>
 
+</html>    
 <?php
 
   }

@@ -22,7 +22,7 @@ class modelo_auto
             $auto=new obj_auto();
             $auto->setPlaca($row[0]);
             $auto->setCodicono($row[1]);
-            $auto->setCodicono($row[2]);
+            $auto->setColor($row[2]);
             $auto->setFoto($row[3]);
             $auto->setMarca($row[4]);
             return $auto;
@@ -34,11 +34,11 @@ class modelo_auto
     }
     public function agregarAuto(obj_auto $auto){
         $this->obj_conexion->conectar();
-        $placa=$auto->getLicencia();
-        $codicono=$auto->getNombre();
-        $color=$auto->getApellido();
-        $foto=$auto->getCelular();
-        $marca=$auto->getDireccion();
+        $placa=$auto->getPlaca();
+        $codicono=$auto->getCodicono();
+        $color=$auto->getColor();
+        $foto=$auto->getFoto();
+        $marca=$auto->getMarca();
 
 
 
@@ -55,11 +55,11 @@ class modelo_auto
     }
     public function actualizarAuto(obj_auto $auto){
         $this->obj_conexion->conectar();
-        $placa=$auto->getLicencia();
-        $codicono=$auto->getNombre();
-        $color=$auto->getApellido();
-        $foto=$auto->getCelular();
-        $marca=$auto->getDireccion();
+        $placa=$auto->getPlaca();
+        $codicono=$auto->getCodicono();
+        $color=$auto->getColor();
+        $foto=$auto->getFoto();
+        $marca=$auto->getMarca();
 
 
         $sql="UPDATE auto SET placa = '$placa',
@@ -98,12 +98,36 @@ class modelo_auto
                 $auto=new obj_auto();
                 $auto->setPlaca($row[0]);
                 $auto->setCodicono($row[1]);
-                $auto->setCodicono($row[2]);
+                $auto->setColor($row[2]);
                 $auto->setFoto($row[3]);
                 $auto->setMarca($row[4]);
                 $autos[]=$auto;
             }
 
+            return $autos;
+        }
+        else{
+            return 0;
+            echo 'no hay resultados';
+        }
+    }
+    public function conincidenciasAutosbyPlaca($par)
+    {
+        $this->obj_conexion->conectar();
+
+        $autos=array();
+        $sql="SELECT * FROM auto WHERE placa LIKE '%$par%'";
+        $result= $this->obj_conexion->conexion->query($sql);
+        if($result){
+            while ($row = mysqli_fetch_array($result)) {
+                $auto=new obj_auto();
+                $auto->setPlaca($row[0]);
+                $auto->setCodicono($row[1]);
+                $auto->setColor($row[2]);
+                $auto->setFoto($row[3]);
+                $auto->setMarca($row[4]);
+                $autos[]=$auto;
+            }
             return $autos;
         }
         else{

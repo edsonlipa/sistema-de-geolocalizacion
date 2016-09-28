@@ -1,5 +1,5 @@
 <?php
-require ("modelo_persona.php");
+require ("../Models/modelo_conduce.php");
 //require("../Templates/obj_persona.php");
 /**
  * este archivo sirve unicmante para pruebas de clases...
@@ -43,15 +43,15 @@ foreach ($lista as $person)
 {
     echo $person->getApellido(). "<br>";
 }
+ * $auto=new obj_auto();
+$auto->setPlaca("Q12345678");
+$auto->setCodicono(1);
+$auto->setColor($row[2]);
+$auto->setFoto($row[3]);
+$auto->setMarca($row[4]);
  * *******************************************************************************************
  */
-$modelopersona=new modelo_persona();
-$persona=new obj_persona();
-$persona->setLicencia("Q85741132");
-$persona->setNombre("ruth");
-$persona->setApellido("huillca");
-$persona->setDireccion("Cerro colorado");
-$persona->setCelular("654654654");
-$persona->setEmail("ruht@gmail.com");
-$persona->setFoto("ruth.jpg");
-echo $modelopersona->agregarPersona($persona);
+$modeloauto=new modelo_conduce();
+
+
+echo $modeloauto->getConduceById(1)->getLicenciaC();

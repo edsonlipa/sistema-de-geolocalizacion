@@ -51,7 +51,7 @@ class modelo_lugar
         return $result;
         $this->obj_conexion->cerrar();
     }
-    public function actualizarlugar(obj_lugar $lugar){
+    public function actualizarLugar(obj_lugar $lugar){
         $this->obj_conexion->conectar();
         $id=$lugar->getId();
         $nomLugar=$lugar->getNomLugar();

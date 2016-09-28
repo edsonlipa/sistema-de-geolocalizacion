@@ -1,6 +1,4 @@
 <?php
-require ("../Models/modelo_persona.php");
-require ("../Models/modelo_auto.php");
 class obj_conduce
 {
     private $idC;

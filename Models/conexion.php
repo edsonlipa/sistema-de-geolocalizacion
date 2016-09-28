@@ -11,7 +11,7 @@
 		public function __construct(){
 			$this->servidor   = "localhost";
 			$this->usuario	  = "root";
-			$this->contraseña = "";
+			$this->contraseña = "edson3936";
 			$this->basedatos  = "geolocalizacion";
             $this->flag=true;
 

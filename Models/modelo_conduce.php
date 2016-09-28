@@ -31,6 +31,39 @@ class modelo_conduce
         }
         $this->obj_conexion->cerrar();
     }
+    public function getConduceByLicencia($licencia)
+    {
+        $this->obj_conexion->conectar();
+        $sql="select * from conduce WHERE licencia='$licencia'";
+        $result=$this->obj_conexion->conexion->query($sql);
+        $num_rows=mysqli_num_rows($result);
+        if($num_rows==1)
+        {
+            $row=mysqli_fetch_row($result);
+            $conduce=new obj_conduce();
+            $conduce->setIdC($row[0]);
+            $conduce->setLicenciaC($row[1]);
+            $conduce->setPlacaC($row[2]);
+            return $conduce;
+        }
+        elseif ($num_rows>1){
+            $ConduceS=array();
+            while ($row = mysqli_fetch_array($result)) {
+
+                $conduce=new obj_conduce();
+                $conduce->setIdC($row[0]);
+                $conduce->setLicenciaC($row[1]);
+                $conduce->setPlacaC($row[2]);
+                $ConduceS[]=$conduce;
+
+            }
+            return $ConduceS;
+        }
+        else{
+            return 0;
+        }
+        $this->obj_conexion->cerrar();
+    }
     /////////////////////////////////////////////////////////////////////
     //                       agreagar formas diferente de agreger por objeton conduce o con objetos auto y persona
     /////////////////////////////////////////////////////////////////////
@@ -55,8 +88,6 @@ class modelo_conduce
         $id=$conduce->getIdC();
         $licencia=$conduce->getLicenciaC();
         $placa=$conduce->getPlacaC();
-
-
 
         $sql="UPDATE conduce SET id = '$id',
               licencia='$licencia',placa='$placa' WHERE id = '$id';";

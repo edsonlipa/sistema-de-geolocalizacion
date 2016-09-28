@@ -1,6 +1,4 @@
 <?php
-require ("../Models/modelo_lugar.php");
-require ("../Models/modelo_auto.php");
 
 class obj_trakeo
 {

@@ -59,9 +59,9 @@ class modelo_usuario
         $this->obj_conexion->conectar();
         $id=$usuario->getid();
         $nombres=$usuario->getNombre();
-        $usuarios=$usuario->getApellido();
-        $password=$usuario->getCelular();
-        $tipo=$usuario->getDireccion();
+        $usuarios=$usuario->getUsuario();
+        $password=$usuario->getPassword();
+        $tipo=$usuario->getTipo();
 
 
         $tabla="INSERT INTO usuarios (id, nombres, usuario, password, tipo) ";
@@ -79,9 +79,9 @@ class modelo_usuario
         $this->obj_conexion->conectar();
         $id=$usuario->getid();
         $nombres=$usuario->getNombre();
-        $usuarios=$usuario->getApellido();
-        $password=$usuario->getCelular();
-        $tipo=$usuario->getDireccion();
+        $usuarios=$usuario->getUsuario();
+        $password=$usuario->getPassword();
+        $tipo=$usuario->getTipo();
 
 
         $sql="UPDATE usuarios SET id = '$id',
