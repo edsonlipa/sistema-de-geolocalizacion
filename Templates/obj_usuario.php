@@ -6,6 +6,9 @@ class obj_usuario
     private $nombre;
     private $usuario;
     private $password;
+    private $pregunta;
+    private $respuesta;
+    private $email;
     private $tipo;
 
     public function __construct()
@@ -14,7 +17,11 @@ class obj_usuario
         $this->nombre = null;
         $this->usuario = null;
         $this->password = null;
+        $this->pregunta = null;
+        $this->respuesta = null;
+        $this->email = null;
         $this->tipo = null;
+
     }
 
     public function getId()
@@ -57,6 +64,36 @@ class obj_usuario
         $this->password = $password;
     }
 
+    public function getPregunta()
+    {
+        return $this->pregunta;
+    }
+
+    public function setPregunta($pregunta)
+    {
+        $this->pregunta = $pregunta;
+    }
+
+    public function getRespuesta()
+    {
+        return $this->respuesta;
+    }
+
+    public function setRespuesta($respuesta)
+    {
+        $this->respuesta = $respuesta;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
     public function getTipo()
     {
         return $this->tipo;
@@ -73,6 +110,9 @@ class obj_usuario
         $this->nombre = null;
         $this->usuario = null;
         $this->password = null;
+        $this->pregunta = null;
+        $this->respuesta = null;
+        $this->email = null;
         $this->tipo = null;
     }
 
