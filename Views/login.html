@@ -10,16 +10,16 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
+
         <!-- CSS -->
         
         <link rel="stylesheet" href="../Resources/css/reset.css">
         <link rel="stylesheet" href="../Resources/css/supersized.css">
         <link rel="stylesheet" href="../Resources/css/style.css">
-
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="../Resources/css/bootstrap.min.css">
+        
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </head>
 
@@ -32,8 +32,140 @@
                 <input type="password" name="password" class="password" id="password" placeholder="Password">
                 <button type="button" onclick="confirmar()">Sign me in</button>
                 <div class="error"><span>+</span></div>
+                <button type="button"  data-toggle="modal" data-target="#myModal">Olvide mi contraseña</button>
+
+          <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          
+                        </div>
+                        <div class="modal-body">
+                        			<body>
+																																								
+													<section class="section">
+
+																	<div class="row">
+																		
+																		<!-- <div class="card card-block sameheight-item"> -->
+																			<h1 class="page-header">
+																				<small>Recuperacion de Contraseña</small>
+																			</h1>
+																			
+																			<hr class="fx-line">
+
+																			<div class="panel">
+
+																				<div class="form-group">
+																					<label for="email" class="col-lg-2 control-label">Email :</label>
+																					<input type="text" class="form-control" name="email" id="email" placeholder="Email" style="width:330px;" required>
+																				</div>
+
+																				<div class="form-group" >
+																		 			<label for="respuesta" class="col-lg-2 control-label">Pregunta :</label>
+																					<input type="text" class="form-control" name="pregunta" id="pregunta" placeholder="Pregunta" style="width:330px;" required>
+																				</div>
+																		
+																				<div class="form-group" >
+																		 			<label for="respuesta" class="col-lg-2 control-label">Respuesta :</label>
+																					<input type="text" class="form-control" name="respuesta" id="respuesta" placeholder="Respuesta" style="width:330px;" required>
+																				</div>																																							
+																				<div class="app" id="app">
+																						<header class="header">
+																							<div class="header-block header-block-collapse"> <button class="collapse-btn" id="sidebar-collapse-btn">Enviar
+																								
+																						</button> </div>	
+																				<div class="modal-footer">
+																					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																			
+																				</div>
+																			</div>
+																	</div>
+													</section>
+												
+												</div>
+											
+										</div>
+		
+										<!-- Reference block for JS -->
+									   
+										<script src="../Resources/js/vendor.js"></script>
+										<script src="../Resources/js/app.js"></script>
+										<script>
+										function cerrar()
+										{
+											$.ajax({
+												url:'../Controllers/usuario.php',
+												type:'POST',
+												data:"boton=cerrar"
+											}).done(function(resp){
+												location.href = '../Views/login.html'
+											});
+										}
+										function subir() {
+											var file_data = $("#imagen").prop("files")[0];
+											var form_data = new FormData();
+											form_data.append("file", file_data)
+
+											$.ajax({
+												url: "recogerFichero.php",
+												dataType: 'script',
+												cache: false,
+												contentType: false,
+												processData: false,
+												data: form_data,
+												type: 'post',
+												success: function(){
+													
+												}
+											});
+
+										};
+										function crear() {
+
+											var pregunta =$('#pregunta').val();
+											var email =$('#email').val();
+											
+										 if (pregunta&&email) {   
+												$.ajax({
+												url:'../Controllers/crear_persona.php',
+												type:'POST',
+												//data:'apellido='+apellido+'&nombre='+nombre+"&licencia="+licencia+"&email="+email+'&direccion='+direccion+'&celular='+celular+'&imagen='+imagen
+											}).done(function(resp){
+												alert(resp);
+												if (resp=="En unos momentos enviaremos un mensaje a su correo ") {
+													subir();
+													location.href='../Views/nuevaPersona.php';
+												}
+												
+
+											})}
+											 else{
+												alert("hay campos vacios, todos los campos son necesarios");
+											 }    
+										 };
+									</script>
+									</body>
+
+								</html>    
+								<?php
+
+									  }
+									  else
+									  {
+										header("location: ./");
+									  }
+									 ?>
+
+                        </div>
+                        
+                      </div>
+                  </div>   
+
             </form>
-            
+         </div>								   
         </div>
 
         <!-- Javascript -->
@@ -57,7 +189,7 @@
                         alert('el usuario es un '+resp);
                         if (resp=='usuario estandar') 
                         {
-                            location.href='../Views/Aplicacion_Ustandar.php';
+                            location.href='../Views/Aplicacion_Estandar.php';
                          }
                         else if(resp=='administrador')
                         {
@@ -65,6 +197,7 @@
                         }
                     }
                 })};
+
         </script>
 
     </body>

@@ -94,6 +94,23 @@ session_start();
                                                         <input type="password" class="form-control" name="password" id="password" placeholder="Password" style="width:330px;" required>
                                                     </div>
                                                     <div class="form-group">
+                                                        <label for="pregunta" class="col-lg-2 control-label">Pregunta:</label>
+                                                        <select class="form-control" name="pregunta" id="pregunta" style="width:330px;">
+                                                            <option>¿Nombre de tu primera mascota?</option>
+                                                            <option>Nombre de tu enamorad@?</option>
+                                                            <option>Nombre de tu profesor/a favorit@?</option>
+                                                            <option>Nombre del Cantante o grupo favorito?</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="respuesta" class="col-lg-2 control-label">Respuesta:</label>
+                                                        <input type="respuesta" class="form-control" name="respuesta" id="respuesta" placeholder="Respuesta" style="width:330px;" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email" class="col-lg-2 control-label">Email:</label>
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" style="width:330px;" required>
+                                                    </div>
+                                                    <div class="form-group">
                                                         <label for="tipo" class="col-lg-2 control-label">Tipo:</label>
                                                         <select class="form-control" name="tipo" id="tipo" style="width:330px;">
                                                             <option>usuario estandar</option>
@@ -147,12 +164,17 @@ session_start();
             console.log(nombre);
             console.log(usuario);
             var password =$('#password').val();
+            var pregunta =$('#pregunta').val();
+            var respuesta =$('#respuesta').val();
+            var email =$('#email').val();
+            console.log(respuesta);
+            console.log(email);
             var tipo =$('#tipo').val();
-            if (nombre&&usuario&&password&&tipo) {   
+            if (nombre&&usuario&&password&&pregunta&&respuesta&&email&&tipo) {   
                $.ajax({
                 url:'../Controllers/crear_usuario.php',
                 type:'POST',
-                data:'nombres='+nombre+"&usuarios="+usuario+"&password="+password+'&tipo='+tipo
+                data:'nombres='+nombre+"&usuarios="+usuario+"&password="+password+'&pregunta='+pregunta+"&respuesta="+respuesta+"&email="+email+'&tipo='+tipo
             }).done(function(resp){
                 alert(resp);
                 if (resp=="exito , agrego un usuario correctamente") {
