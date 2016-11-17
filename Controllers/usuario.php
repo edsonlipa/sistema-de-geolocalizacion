@@ -24,9 +24,9 @@
 				session_start();
 				$_SESSION['ingreso']='YES';
 				$_SESSION['nombre']=$array[1];
-				$_SESSION['tipo']=$array[4];
+				$_SESSION['tipo']=$array[7];
 
-				echo $array[4];
+				echo $array[7];
 
 			}
 		}
