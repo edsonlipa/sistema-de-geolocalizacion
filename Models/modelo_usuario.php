@@ -24,7 +24,10 @@ class modelo_usuario
             $usuario->setNombre($row[1]);
             $usuario->setUsuario($row[2]);
             $usuario->setPassword($row[3]);
-            $usuario->setTipo($row[4]);
+            $usuario->setPregunta($row[4]);
+            $usuario->setRespuesta($row[5]);
+            $usuario->setEmail($row[6]);
+            $usuario->setTipo($row[7]);
             return $usuario;
 
         }
@@ -47,7 +50,10 @@ class modelo_usuario
             $usuario->setNombre($row[1]);
             $usuario->setUsuario($row[2]);
             $usuario->setPassword($row[3]);
-            $usuario->setTipo($row[4]);
+            $usuario->setPregunta($row[4]);
+            $usuario->setRespuesta($row[5]);
+            $usuario->setEmail($row[6]);
+            $usuario->setTipo($row[7]);
             return $usuario;
         }
         else{
@@ -61,11 +67,14 @@ class modelo_usuario
         $nombres=$usuario->getNombre();
         $usuarios=$usuario->getUsuario();
         $password=$usuario->getPassword();
+        $pregunta=$usuario->getPregunta();
+        $respuesta=$usuario->getRespuesta();
+        $email=$usuario->getEmail();
         $tipo=$usuario->getTipo();
 
 
-        $tabla="INSERT INTO usuarios (id, nombres, usuario, password, tipo) ";
-        $valores="VALUES (NULL,'$nombres', '$usuarios', '$password','$tipo');";
+        $tabla="INSERT INTO usuarios (id, nombres, usuario, password, pregunta, respuesta, email, tipo) ";
+        $valores="VALUES (NULL,'$nombres', '$usuarios', '$password', '$pregunta' ,'$respuesta', '$email', '$tipo');";
         $sql=$tabla.$valores;
 
         $result=$this->obj_conexion->conexion->query($sql);
@@ -81,12 +90,17 @@ class modelo_usuario
         $nombres=$usuario->getNombre();
         $usuarios=$usuario->getUsuario();
         $password=$usuario->getPassword();
+        $pregunta=$usuario->getPregunta();
+        $respuesta=$usuario->getRespuesta();
+        $email=$usuario->getEmail();
         $tipo=$usuario->getTipo();
 
 
         $sql="UPDATE usuarios SET id = '$id',
               nombres='$nombres',usuario='$usuarios',
-              password='$password',tipo='$tipo' WHERE id = '$id';";
+              password='$password', pregunta='$pregunta',
+              respuesta='$respuesta', email='$email',
+              tipo='$tipo' WHERE id = '$id';";
 
         $result=$this->obj_conexion->conexion->query($sql);
         if(!$result){
@@ -130,7 +144,10 @@ class modelo_usuario
                 $usuario->setNombre($row[1]);
                 $usuario->setUsuario($row[2]);
                 $usuario->setPassword($row[3]);
-                $usuario->setTipo($row[4]);
+                $usuario->setPregunta($row[4]);
+                $usuario->setRespuesta($row[5]);
+                $usuario->setEmail($row[6]);
+                $usuario->setTipo($row[7]);
                 $usuarios[]=$usuario;
             }
             return $usuarios;
