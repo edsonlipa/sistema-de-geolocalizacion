@@ -37,9 +37,11 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="Aplicacion_Ustandar.php"> <i class="fa fa-map-marker"></i> Aplicacion </a>
+                                    <a href="Aplicacion_Estandar.php"> <i class="fa fa-map-marker"></i> Aplicacion </a>
                                 </li>
-                                
+                                <li>
+                                    <a href="contrasena.php"> <i class="fa fa-unlock"></i>Cambiar contraseña</a>
+                                </li>
             
                             </ul>
                         </nav>
