@@ -83,6 +83,18 @@ class modelo_lugar
         $this->obj_conexion->cerrar();
         return $result;
     }
+    public function eliminarById($idlugar){
+        $this->obj_conexion->conectar();
+
+        $query="DELETE FROM lugar where id='$idlugar';";
+        $result=$this->obj_conexion->conexion->query($query);
+        if(!$result){
+            $lugar->unsetLugar();
+            return 0;
+        }
+        $this->obj_conexion->cerrar();
+        return $result;
+    }
 
     public function getAll(){
         $this->obj_conexion->conectar();

@@ -1,3 +1,4 @@
+
 /**
  * Created by edson on 22/07/2016.
  */
@@ -5,35 +6,21 @@
 var map;
 var myCenter;
 var myPos;
-
+var new_marker_for_lugar;
 var myCenter1;
-var myCenter2;
+
+
 function iniciar() {
     myCenter=new google.maps.LatLng(-16.4045861,-71.5311351);
     map = new google.maps.Map(document.getElementById('mapa'), {
         center: myCenter,
         zoom: 15
     });
-
-
 }
-function CleanOverlays() {
-    map.clearOverlays();
-
+function cleanMap() {
+    setMapOnAll(null);
 }
-function marcador(){
-    myCenter1=new google.maps.LatLng(-16.4026179,-71.529429);
-    var marker=new google.maps.Marker({
-        position:myCenter1
-    });
-    marker.setMap(map);
 
-    myCenter2=new google.maps.LatLng(-16.404865, -71.532315);
-    var marker1=new google.maps.Marker({
-        position:myCenter2
-    });
-    marker1.setMap(map);
-}
 function set_marcador(lat,long){
     myCenter1=new google.maps.LatLng(lat,long);
     var marker=new google.maps.Marker({
@@ -68,6 +55,115 @@ function enrutar(latorigen,longorigen,latdestino,longdestino) {
         }
     });
 }
+function esperar(){
+    console.log("hola");
+    var listener1 = google.maps.event.addListener(map, 'click', function(event) {
+        var latlong = event.latLng;
+        addMarker(latlong, map);
+        document.getElementById("Latitud").value=latlong.lat();
+        document.getElementById("Longitud").value=latlong.lng();
+        $("#lugarModal").modal();
+        $("#lugarModal").on('hidden.bs.modal', function (e) {
+            cancel_marker();
+        });
+        google.maps.event.removeListener(listener1);
+    });
+}
+
+function crear_lugar() {
+    var datos={"Latitud":$('#Latitud').val(),
+               "Longitud": $('#Longitud').val(),
+                "Nombre":$('#Nombre').val(),
+                "codLugar":$('#codLugar').val()};
+                console.log($('#Nombre').val());
+                console.log($('#codLugar').val());
+
+
+    if (datos["Nombre"]&&datos["codLugar"]) {
+        $.ajax({
+            url:'../Controllers/crear_lugar.php',
+            type:'POST',
+            data:datos
+        }).done(function(resp){
+
+            console.log(resp);
+            if (resp=="correcto") {
+                document.getElementById("Nombre").value="";
+                document.getElementById("codLugar").value="";
+                $("#lugarModal").modal('hide');
+                $("#alert-success").fadeIn();
+               setTimeout(function() {
+                   $('#alert-success').fadeOut();
+               },2000);
+
+            }
+            else {console.log("error al agregar lugar");}
+        })
+    }
+    else{
+        $("#warning_agregar").show();
+        setTimeout(function() {
+            $('#warning_agregar').fadeOut();
+        },1500);
+
+    }
+}
+function editar_lugar() {
+    $("#lugarModal").modal();
+}
+function eliminar_lugar(id) {
+
+}
+function addMarker(location, map) { //funcion utilizado solo para agregar lugares
+    new_marker_for_lugar = new google.maps.Marker({   //new_marker_for_lugar ya esta declarado como una variable global
+        position: location,
+        label: "nuevo marcador",
+        map: map
+    });
+}
+function cancel_marker() {
+    new_marker_for_lugar.setMap(null);
+}
+
+function retornar_lugares() {
+    console.log("sdfsdhflkasdjfh");
+    $.ajax({
+        url:'../Controllers/info_markers.php',
+        type:'POST',
+        data:''
+    }).done(function(resp){
+        //console.log(resp[1].);
+        for (i = 0; i < resp.length; i++)
+        {
+            console.log(i);
+            var location=new google.maps.LatLng(resp[i].latitud,resp[i].longitud);
+            var marcador_de_lugar = new google.maps.Marker({   //new_marker_for_lugar ya esta declarado como una variable global
+                position: location,
+                label: resp[i].id,
+                map: map
+            });
+            var info="<table class=\"table table-sm\"> <tbody> <tr> <th >Identificador:</th> <td >"+resp[i].id+"</td> <th>Nombre:</th> <td>"+resp[i].nomLugar+"</td> </tr>"+
+                " <tr> <th >Latitud:</th> <td >"+resp[i].latitud+"</td> <th>Longitud:</th> <td>"+resp[i].longitud+"</td> </tr>"+
+                " <tr> <th >Codigo</th> <td >"+resp[i].codLugar+"</td> <th></th> "+
+                "<td><a class=\"edit text-warning\" id=\"editar\" style='margin-right: 5%;' onclick='console.log(\""+resp[i].id+"\");'> <i class=\"fa fa-pencil\"></i> editar</a>" +
+                "<a class=\"remove text-danger\" id=\""+resp[i].id+"\"  onclick=\"console.log("+resp[i].id+")\"> <i class=\"fa fa-trash-o \"></i>eliminar </a></td> </tr> </tbody> </table>";
+            set_info(marcador_de_lugar,info);
+
+        }
+        console.log(resp[0].nomLugar);
+        //document.getElementById("sugerenciasPersonas").innerHTML=resp;
+    });
+}
+function set_info(marker, info) {
+    var infowindow = new google.maps.InfoWindow({
+        content: info
+    });
+
+    marker.addListener('click', function() {
+        infowindow.open(marker.get('map'), marker);
+    });
+}
+
     function Coincidencias()
     {
         var datos={
@@ -83,6 +179,13 @@ function enrutar(latorigen,longorigen,latdestino,longdestino) {
         });
     }
 
+    function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+            break;}
+    }
+    }
     function escogerpersona(id)
     {
         //alert(document.getElementById("sugerencias").rows[id].cells[0].innerHTML);
