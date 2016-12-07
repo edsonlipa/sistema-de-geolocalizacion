@@ -126,7 +126,7 @@ function cancel_marker() {
 }
 
 function retornar_lugares() {
-    console.log("sdfsdhflkasdjfh");
+    //console.log("sdfsdhflkasdjfh");
     $.ajax({
         url:'../Controllers/info_markers.php',
         type:'POST',
@@ -154,11 +154,50 @@ function retornar_lugares() {
         //document.getElementById("sugerenciasPersonas").innerHTML=resp;
     });
 }
+function Ubicar_Auto() {
+    var datos={
+        "placa":document.getElementById('placa_number').value
+    };
+    //console.log(datos.placa);
+    $.ajax({
+        url:'../Controllers/ubicar_auto.php',
+        type:'POST',
+        data:datos
+    }).done(function(resp){
+        console.log(resp.licencia);
+        //console.log(resp);
+        //document.getElementById("sugerenciasPersonas").innerHTML=resp;
+        var location=new google.maps.LatLng(resp.latitud,resp.longitud);
+        var icono ='../Resources/img/icono-auto.png';
+        
+        var marcador_de_lugar = new google.maps.Marker({   //new_marker_for_lugar ya esta declarado como una variable global
+            position: location,
+            label: resp.id,
+            map: map,
+            icon:icono
+        });
+        var info="<table class=\"table table-sm\"> <tbody>"+
+            " <tr> <th >Identificador:</th> <td >"+resp.id+"</td> <th>Lugar:</th> <td>"+resp.nomLugar+"</td> </tr>"+
+            " <tr> <th >Latitud:</th> <td >"+resp.latitud+"</td> <th>Longitud:</th> <td>"+resp.longitud+"</td> </tr>"+
+            " <tr> <th >Nombre</th> <td >"+resp.nombreC+" "+resp.apellidoC+"</td> <th>Placa:</th> <td>"+resp.placa+"</td> </tr>"+
+            " </tbody> </table>";
+        Show_set_info(marcador_de_lugar,info);
+    });
+}
 function set_info(marker, info) {
     var infowindow = new google.maps.InfoWindow({
         content: info
     });
 
+    marker.addListener('click', function() {
+        infowindow.open(marker.get('map'), marker);
+    });
+}
+function Show_set_info(marker, info) {
+    var infowindow = new google.maps.InfoWindow({
+        content: info
+    });
+    infowindow.open(marker.get('map'), marker);
     marker.addListener('click', function() {
         infowindow.open(marker.get('map'), marker);
     });
@@ -186,6 +225,7 @@ function set_info(marker, info) {
             break;}
     }
     }
+
     function escogerpersona(id)
     {
         //alert(document.getElementById("sugerencias").rows[id].cells[0].innerHTML);
@@ -241,8 +281,19 @@ function set_info(marker, info) {
                 for (i = 0; i < resp.length; i++) {
                 console.log(resp[i].latitud);
                 console.log(resp[i].longitud);
-                set_marcador(resp[i].latitud,resp[i].longitud);
-                if(i>1){
+                    var location=new google.maps.LatLng(resp[i].latitud,resp[i].longitud);
+                    var marcador_de_lugar = new google.maps.Marker({   //new_marker_for_lugar ya esta declarado como una variable global
+                        position: location,
+                        label: resp[i].id,
+                        map: map
+                    });
+                    var info="<table class=\"table table-sm\"> <tbody> <tr> <th >Identificador:</th> <td >"+resp[i].id+"</td> <th>Nombre:</th> <td>"+resp[i].nomLugar+"</td> </tr>"+
+                        " <tr> <th >Latitud:</th> <td >"+resp[i].latitud+"</td> <th>Longitud:</th> <td>"+resp[i].longitud+"</td> </tr>"+
+                        " <tr> <th >Codigo</th> <td >"+resp[i].codLugar+"</td> <th></th> "+
+                        "<td></td> </tr> </tbody> </table>";
+                    set_info(marcador_de_lugar,info);
+
+                    if(i>1){
                     enrutar(resp[i-1].latitud,resp[i-1].longitud,resp[i].latitud,resp[i].longitud);
                 }
             }

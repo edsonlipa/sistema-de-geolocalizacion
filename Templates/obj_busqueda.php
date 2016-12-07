@@ -4,6 +4,8 @@
 class obj_busqueda
 {
     private $licencia;
+    private $nombreC;
+    private $apellidoC;
     private $placa;
     private $fecha;
     private $hora;
@@ -53,6 +55,36 @@ class obj_busqueda
         $this->licencia = $licencia;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getNombreC()
+    {
+        return $this->nombreC;
+    }
+
+    /**
+     * @param mixed $nombreC
+     */
+    public function setNombreC($nombreC)
+    {
+        $this->nombreC = $nombreC;
+    }
+    /**
+     * @return mixed
+     */
+    public function getApellidoC()
+    {
+        return $this->apellidoC;
+    }
+
+    /**
+     * @param mixed $apellidoC
+     */
+    public function setApellidoC($apellidoC)
+    {
+        $this->apellidoC = $apellidoC;
+    }
     /**
      * @return mixed
      */

@@ -189,6 +189,43 @@ conduce.placa=trakeo.placa inner join lugar on trakeo.codLugar=lugar.id where co
         }
         $this->obj_conexion->cerrar();
     }
+
+    /**
+     * @return conexion
+     */
+    public function getUbicationByPlaca($placa)
+    {
+        $this->obj_conexion->conectar();
+        $sql="select persona.licencia,persona.nombre,persona.apellido,conduce.placa,trakeo.fecha,trakeo.hora,trakeo.velocidad,lugar.nomLugar,lugar.latitud,lugar.longitud 
+              from (persona inner join conduce on persona.licencia=conduce.licencia)inner join trakeo on conduce.placa=trakeo.placa 
+              inner join lugar on trakeo.codLugar=lugar.id WHERE trakeo.placa='$placa'ORDER BY trakeo.fecha,trakeo.hora DESC LIMIT 1";
+        $result=$this->obj_conexion->conexion->query($sql);
+        $num_rows=mysqli_num_rows($result);
+        if($num_rows>0)
+        {
+
+            $row = mysqli_fetch_array($result);
+
+            $Busqueda=new obj_busqueda();
+            $Busqueda->setLicencia($row[0]);
+            $Busqueda->setNombreC($row[1]);
+            $Busqueda->setApellidoC($row[2]);
+            $Busqueda->setPlaca($row[3]);
+            $Busqueda->setFecha($row[4]);
+            $Busqueda->setHora($row[5]);
+            $Busqueda->setVelocidad($row[6]);
+            $Busqueda->setNomLugar($row[7]);
+            $Busqueda->setLatitud($row[8]);
+            $Busqueda->setLongitud($row[9]);
+
+
+            return $Busqueda;
+        }
+        else{
+            return 0;
+        }
+        $this->obj_conexion->cerrar();
+    }
     public function getBusquedaBYAll($licencia,$placa,$start_date,$ending_date)
     {
         $this->obj_conexion->conectar();

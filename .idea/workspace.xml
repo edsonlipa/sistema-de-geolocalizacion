@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c380f5-2869-498e-bbe6-d5b08bb7e11a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sistema-de-geolocalizacion.iml" afterPath="$PROJECT_DIR$/.idea/sistema-de-geolocalizacion.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/modelo_lugar.php" afterPath="$PROJECT_DIR$/Models/modelo_lugar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/modelo_busqueda.php" afterPath="$PROJECT_DIR$/Models/modelo_busqueda.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/js/indexmap.js" afterPath="$PROJECT_DIR$/Resources/js/indexmap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/login.html" afterPath="$PROJECT_DIR$/Views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/navigator.php" afterPath="$PROJECT_DIR$/Views/navigator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/nuevoLugar.php" afterPath="$PROJECT_DIR$/Views/nuevoLugar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/obj_busqueda.php" afterPath="$PROJECT_DIR$/Templates/obj_busqueda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" afterPath="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" />
     </list>
     <ignored path="sistema-de-geolocalizacion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,16 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="coincidenciaspersonas.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/coincidenciaspersonas.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Lugares.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/Lugares.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,19 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexmap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/js/indexmap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="128" column="4" lean-forward="false" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
-              <folding>
-                <marker date="1481094705316" expanded="true" signature="4591:4608" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigator.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/navigator.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-87">
@@ -80,21 +55,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buscar_trakeos_por_placa.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php">
+      <file leaf-file-name="modelo_busqueda.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/modelo_busqueda.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="687">
+              <caret line="218" column="41" lean-forward="false" selection-start-line="218" selection-start-column="41" selection-end-line="218" selection-end-column="41" />
+              <folding>
+                <marker date="1481125732441" expanded="true" signature="322:644" ph="SELECT perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="1607:1923" ph="SELECT perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="1607:1924" ph="select perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="1924:1984" ph="select perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="2905:3253" ph="SELECT perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="4241:4587" ph="SELECT perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="5591:5969" ph="SELECT perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="6970:7342" ph="SELECT perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="8348:8770" ph="select perso... persona" />
+                <marker date="1481125732441" expanded="true" signature="9717:10123" ph="SELECT perso... persona" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Aplicacion_Estandar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Aplicacion_Estandar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="145" column="51" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info_markers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/info_markers.php">
+      <file leaf-file-name="indexmap.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Resources/js/indexmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+              <folding>
+                <marker date="1481131267979" expanded="true" signature="4593:4610" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ubicar_auto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/ubicar_auto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -103,8 +111,8 @@
       <file leaf-file-name="buscar_trakeos_por_licencia.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="39" />
+            <state relative-caret-position="282">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -118,6 +126,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sleep</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -155,10 +168,7 @@
         <option value="$PROJECT_DIR$/Controllers/buscar_trakeos.php" />
         <option value="$PROJECT_DIR$/Views/login.html" />
         <option value="$PROJECT_DIR$/Models/modelo_conduce.php" />
-        <option value="$PROJECT_DIR$/Models/modelo_trakeo.php" />
         <option value="$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php" />
-        <option value="$PROJECT_DIR$/Templates/obj_busqueda.php" />
-        <option value="$PROJECT_DIR$/Models/modelo_busqueda.php" />
         <option value="$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php" />
         <option value="$PROJECT_DIR$/Models/modelo_persona.php" />
         <option value="$PROJECT_DIR$/Models/modelo_auto.php" />
@@ -167,8 +177,13 @@
         <option value="$PROJECT_DIR$/Controllers/coincidenciaspersonas.php" />
         <option value="$PROJECT_DIR$/pruenba.txt" />
         <option value="$PROJECT_DIR$/Views/Lugares.php" />
-        <option value="$PROJECT_DIR$/Resources/js/indexmap.js" />
         <option value="$PROJECT_DIR$/Controllers/info_markers.php" />
+        <option value="$PROJECT_DIR$/Models/modelo_trakeo.php" />
+        <option value="$PROJECT_DIR$/Templates/obj_busqueda.php" />
+        <option value="$PROJECT_DIR$/Controllers/ubicar_auto.php" />
+        <option value="$PROJECT_DIR$/Models/modelo_busqueda.php" />
+        <option value="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" />
+        <option value="$PROJECT_DIR$/Resources/js/indexmap.js" />
       </list>
     </option>
   </component>
@@ -247,7 +262,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,6 +279,10 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -275,7 +294,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
+              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,6 +383,10 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER,Show Includes" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -380,23 +403,23 @@
       <workItem from="1469185394852" duration="64905000" />
       <workItem from="1470023788632" duration="2542000" />
       <workItem from="1481089524717" duration="2617000" />
-      <workItem from="1481092545009" duration="3470000" />
+      <workItem from="1481092545009" duration="16902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166022000" />
+    <option name="totallyTimeSpent" value="179454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1030" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09801877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14233577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921794" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -429,21 +452,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Templates/obj_persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php" />
-    <entry file="file://$PROJECT_DIR$/Models/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/mili/navigator.php" />
     <entry file="file://$PROJECT_DIR$/Views/mili/nuevaPersona.php" />
     <entry file="file://$PROJECT_DIR$/Templates/obj_usuario.php">
@@ -523,27 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_lugar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_conduce.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="74" column="60" lean-forward="false" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_trakeo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/obj_auto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -558,24 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/obj_busqueda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="164" column="23" lean-forward="false" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/js/map_function.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_busqueda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="195" column="190" lean-forward="false" selection-start-line="195" selection-start-column="190" selection-end-line="195" selection-end-column="190" />
         </state>
       </provider>
     </entry>
@@ -732,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Lugares.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -748,21 +713,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/js/indexmap.js">
+    <entry file="file://$PROJECT_DIR$/Models/modelo_conduce.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="128" column="4" lean-forward="false" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
+        <state relative-caret-position="1332">
+          <caret line="74" column="60" lean-forward="false" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
           <folding>
-            <marker date="1481094705316" expanded="true" signature="4591:4608" ph="..." />
+            <marker date="1481068191742" expanded="true" signature="309:345" ph="select * fro... conduce" />
+            <marker date="1481068191742" expanded="true" signature="939:987" ph="select * fro... conduce" />
+            <marker date="1481068191742" expanded="true" signature="2338:2379" ph="INSERT INTO conduce... " />
+            <marker date="1481068191742" expanded="true" signature="2884:2981" ph="UPDATE condu... " />
+            <marker date="1481068191742" expanded="true" signature="3319:3359" ph="DELETE FROM " />
+            <marker date="1481068191742" expanded="true" signature="3682:3716" ph="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,11 +736,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Models/modelo_trakeo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding>
+            <marker date="1481098285657" expanded="true" signature="325:368" ph="select * fro... trakeo" />
+            <marker date="1481098285657" expanded="true" signature="1075:1116" ph="select * fro... trakeo" />
+            <marker date="1481098285657" expanded="true" signature="2342:2462" ph="SELECT condu... persona" />
+            <marker date="1481098285657" expanded="true" signature="2832:2860" ph="select * fro... trakeo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/modelo_lugar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1479602736000" expanded="true" signature="307:341" ph="select * fro... lugar" />
+            <marker date="1479602736000" expanded="true" signature="1168:1229" ph="INSERT INTO lugar... " />
+            <marker date="1479602736000" expanded="true" signature="1834:1990" ph="UPDATE lugar... " />
+            <marker date="1479602736000" expanded="true" signature="2321:2353" ph="DELETE FROM " />
+            <marker date="1479602736000" expanded="true" signature="2678:2715" ph="DELETE FROM " />
+            <marker date="1479602736000" expanded="true" signature="3050:3077" ph="select * fro... lugar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Views/navigator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-87">
           <caret line="3" column="87" lean-forward="false" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/obj_busqueda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="86" column="5" lean-forward="false" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/modelo_busqueda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="218" column="41" lean-forward="false" selection-start-line="218" selection-start-column="41" selection-end-line="218" selection-end-column="41" />
+          <folding>
+            <marker date="1481125732441" expanded="true" signature="322:644" ph="SELECT perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="1607:1923" ph="SELECT perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="1607:1924" ph="select perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="1924:1984" ph="select perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="2905:3253" ph="SELECT perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="4241:4587" ph="SELECT perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="5591:5969" ph="SELECT perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="6970:7342" ph="SELECT perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="8348:8770" ph="select perso... persona" />
+            <marker date="1481125732441" expanded="true" signature="9717:10123" ph="SELECT perso... persona" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/ubicar_auto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Aplicacion_Estandar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="145" column="51" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/indexUsu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481068191738" expanded="true" signature="6298:6700" ph="..." />
+            <marker date="1481068191738" expanded="true" signature="6324:6469" ph="..." />
+            <marker date="1481068191738" expanded="true" signature="6495:6692" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/indexmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+          <folding>
+            <marker date="1481131267979" expanded="true" signature="4593:4610" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

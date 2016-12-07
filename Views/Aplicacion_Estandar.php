@@ -27,10 +27,6 @@ session_start();
     			<i class="fa fa-bars"></i>
     		</button> </div>
                     
-                    <div class="header-block header-block-buttons">
-                        <a href="https://github.com/modularcode/modular-admin-html" class="btn btn-oval btn-sm rounded-s header-btn"> <i class="fa fa-github-alt"></i> View on GitHub </a>
-                        
-                    </div>
                     <div class="header-block header-block-nav">
                         <ul class="nav-profile">
                             <li class="profile dropdown">
@@ -73,6 +69,7 @@ session_start();
                                 
                                 <h1>Geolocalizacion</h1>
                                 <button class="btn btn-primary" onclick="iniciar()">desenrutar</button>
+
                                 <form>
                                     <h4>Buscar por Conductor</h4> 
                                     <div class="form-group">
@@ -116,6 +113,7 @@ session_start();
                                     </div>  
                                     <p> agregar espacio</p>                
                                   <button type="button" class="btn btn-info btn-lg" onclick="buscar();">Buscar</button>
+                                    <button type="button" class="btn btn-info btn-lg" onclick="Ubicar_Auto();">Ubicar auto</button>
                                 </form>
                             </div>
                             <div class="col-xs-12 col-sm-7 col-md-7" id="mapa" style=" height: 800px;">
@@ -145,7 +143,7 @@ session_start();
         <script src="js/app.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD192AY4NxJxc8m55g4hrWzSAVVd6_XXf4&signed_in=true&callback=iniciar"></script>
-        <script src="../Resources/js/indexmap.js"></script>
+        <script src="../Resources/js/indexmap.js?1.1"></script>
         <script src="../Resources/js/map_function.js"></script>
     </body>
 
