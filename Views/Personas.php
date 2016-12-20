@@ -28,8 +28,8 @@ session_start();
                     <div class="header-block header-block-collapse hidden-lg-up"> <button class="collapse-btn" id="sidebar-collapse-btn">
                 <i class="fa fa-bars"></i>
             </button> </div>
-                    
-                    
+
+
                     <div class="header-block header-block-nav">
                         <ul class="nav-profile">
                             <li class="profile dropdown">
@@ -55,13 +55,13 @@ session_start();
                         include_once "navigator.php";
                         ?>
                     </div>
-                    
+
                 </aside>
                 <div class="sidebar-overlay" id="sidebar-oaverlay"></div>
                 <article class="content dashboard-page">
-                    
+
                     <section class="section">
-                        <div class="main col-lg-10">
+                        <div class="main col-lg-12">
                         <div class="card card-block sameheight-item">
                             <table id="example"  class="display" cellspacing="0" width="100%">
                                 <thead>
@@ -90,7 +90,7 @@ session_start();
 
                                      $modelopersona=new modelo_persona();
                                      $personas=$modelopersona->getAll();
-                                     
+
                                      //saco el numero de elementos
                                     $longitud = count($personas);
                                     //Recorro todos los elementos
@@ -105,7 +105,7 @@ session_start();
                                          <td>'.$personas[$i]->getEmail().'</td>
                                          <td>
                                          <ul class="item-actions-list">
-                                                <a class="remove" id="'.$a.'" data-toggle="modal" data-target="#confirm-modal" onclick="eliminar(this.id);"> <i class="fa fa-trash-o "></i>eliminar </a>  
+                                                <a class="remove" id="'.$a.'" data-toggle="modal" data-target="#confirm-modal" onclick="eliminar(this.id);"> <i class="fa fa-trash-o "></i>eliminar </a>
                                                 <a class="edit" id="editar'.$i.'"> <i class="fa fa-pencil"></i> editar</a>
                                              </ul>
                                         </td>';
@@ -114,18 +114,18 @@ session_start();
                                      ?>
                                 </tbody>
                             </table>
-                            
-                                           
-                                            
-                                            
-                                        
+
+
+
+
+
                         </div>
                         </div>
                     </section>
                     <section>
                     <div class="main col-lg-12">
                         <div class="card card-block sameheight-item">
-                            <table  class="table table-condensed" width="50%" >
+                            <table  class="table table-condensed" width="100%" >
                                 <thead>
                                 <tr>
                                     <td rowspan="6" id="mostrar_imagen"></td>
@@ -154,7 +154,91 @@ session_start();
                                 </tr>
                             </table>
                             </div>
-                    </div>
+                          </div>
+                    </section>
+                    <section class="col-lg-6">
+                    <div class="main col-lg-12">
+                        <div class="card card-block sameheight-item">
+                          <h3>autos en posecion:<button>add</button></h3>
+                            <table  class="table table-condensed" width="100%" >
+                              <thead>
+                              <tr>
+                                <th>Placa</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Color</th>
+                                <th>Acciones</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>asd-654</td>
+                                <td>hymday</td>
+                                <td>grand</td>
+                                <td>plata</td>
+                                <td>editar eliminar</td>
+                              </tr>
+                              <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                                <td>plata</td>
+                                <td>editar eliminar</td>
+                              </tr>
+                              <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>plata</td>
+                                <td>editar eliminar</td>
+                              </tr>
+                            </tbody>
+                            </table>
+
+                            </div>
+                          </div>
+                    </section>
+                    <section class="col-lg-6">
+                    <div class="main col-lg-12">
+                        <div class="card card-block sameheight-item">
+                          <h3>conduciendo actualmente:<button>add</button></h3>
+                            <table  class="table table-condensed" width="100%" >
+                              <thead>
+                              <tr>
+                                <th>Placa</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Color</th>
+                                <th>Acciones</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>asd-654</td>
+                                <td>hymday</td>
+                                <td>grand</td>
+                                <td>plata</td>
+                                <td>editar eliminar</td>
+                              </tr>
+                              <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                                <td>plata</td>
+                                <td>editar eliminar</td>
+                              </tr>
+                              <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td>plata</td>
+                                <td>editar eliminar</td>
+                              </tr>
+                            </tbody>
+                            </table>
+
+                            </div>
+                          </div>
                     </section>
                 </article>
                 <footer class="footer">
@@ -168,12 +252,12 @@ session_start();
                         </ul>
                     </div>
                 </footer>
-              
+
             </div>
         </div>
         <!-- Reference block for JS -->
-       
-        
+
+
         <script src="../Resources/js/vendor.js"></script>
         <script src="../Resources/js/app.js"></script>
         <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
@@ -222,7 +306,7 @@ session_start();
                 type:'POST',
                 data:"licencia="+licencia
             }).done(function(resp){
-                
+
                 document.getElementById("mostrar_imagen").innerHTML =" <img src='../Resources/img/"+resp.foto+" ' width='250px' height='250px' >";
                 document.getElementById("mostrar_nombre").innerHTML = resp.nombre;
                 document.getElementById("mostrar_licencia").innerHTML = resp.licencia;
@@ -232,11 +316,11 @@ session_start();
                 document.getElementById("mostrar_email").innerHTML = resp.email ;
                 }
             )
-           
+
         }
         function eliminar(h){
                 var licencia = document.getElementById("example").rows[h].cells[0].innerHTML ;
-            
+
                if (confirm("¿seguro que desea eliminar un registro?")) {
                     $.ajax({
                     url:'../Controllers/eliminar_persona.php',
@@ -251,12 +335,12 @@ session_start();
 
                }
         }
-        
+
 
     </script>
     </body>
 
-</html>    
+</html>
 <?php
 
   }

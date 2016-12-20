@@ -1,44 +1,41 @@
 <?php
 require_once('../Models/modelo_trakeo.php');
-/**
- * Created by PhpStorm.
- * User: edson
- * Date: 22/07/2016
- * Time: 9:47 AM
- */
 
-$jtrakeos=array();
-//$id=$_POST['id'];
-//$placa=$_POST['placa'];
-$placa="V6A-477";
+$start=$_POST['start_date'];
+$ending=$_POST['ending_date'];
+$placa=$_POST['placa'];
 
+//$placa="V6A-477";
+//$start="2016-05-12";
+//$ending="2016-08-15";
 $modtrakeo = new modelo_trakeo();
-$trakeos = $modtrakeo->getTrakeoByPlaca($placa);
+$trakeos = $modtrakeo->getBusquedaBy_PlacaBetweenFech($placa,$start,$ending);
+
 if($trakeos)
 {
-
-
+    $jtrakeos=array();
     for($i=0;$i<count($trakeos);$i++)
     {
     $data=array();
-    $data['codigo']= $trakeos[$i]->getCodigo();
-    $data['codlugar']= $trakeos[$i]->getCodLugarT();
-    $data['placa']= $trakeos[$i]->getPlacaT();
-    $data['fecha']= $trakeos[$i]->getFecha();
-    $data['hora']= $trakeos[$i]->getHora();
-    $data['velocidad']= $trakeos[$i]->getVelocidad();
+        $data['placa']= $trakeos[$i]->getPlaca();
+        $data['marca']= $trakeos[$i]->getMarca();
+        $data['color']= $trakeos[$i]->getColor();
+        $data['foto']= $trakeos[$i]->getFoto();
+        $data['idLugar']= $trakeos[$i]->getIdLugar();
+        $data['nomLugar']= utf8_encode($trakeos[$i]->getNomLugar());
+        $data['codLugar']= utf8_encode($trakeos[$i]->getCodLugar());
+        $data['latitud']= $trakeos[$i]->getLatitud();
+        $data['longitud']= $trakeos[$i]->getLongitud();
+        $data['fecha']= $trakeos[$i]->getFecha();
+        $data['hora']= $trakeos[$i]->getHora();
+        $data['velocidad']= $trakeos[$i]->getVelocidad();
+        $data['icono']= $trakeos[$i]->getCodicono();
 
         $jtrakeos[$i]=$data;
 
        }
     header('Content-type: application/json; charset=utf-8');
     echo json_encode($jtrakeos);
-    //exit();
-
-
-}
-elseif (count($trakeos)>0){
-    echo $trakeos[0]->getPlacaT();
 }
 else{
     echo "no encontrado";

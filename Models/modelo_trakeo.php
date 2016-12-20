@@ -1,71 +1,102 @@
 <?php
 require("../Templates/obj_trakeo.php");
-require("../Models/modelo_conduce.php");
-
+require("conexion.php");
 class modelo_trakeo
 {
     private $obj_conexion;
 
     function __construct()
     {
-        $this->obj_conexion=new conexion();
+        $this->obj_conexion = new conexion();
     }
-    public function getTrakeoById($codigo)
+
+    public function getUbicationByPlaca($placa)
+    {   $this->obj_conexion->conectar();
+        $sql="select auto.placa,
+                    auto.marca,
+                    auto.color,
+                    auto.foto,
+                    lugar.id,
+                    lugar.nomLugar,
+                    lugar.codLugar,
+                    lugar.latitud,
+                    lugar.longitud,
+                    trakeo.fecha,
+                    trakeo.hora,
+                    trakeo.velocidad,
+                    auto.codicono 
+              from auto inner join trakeo on auto.placa=trakeo.placa 
+              inner join lugar on trakeo.codLugar=lugar.id WHERE trakeo.placa='$placa'ORDER BY trakeo.fecha,trakeo.hora DESC LIMIT 1;";
+        $result=$this->obj_conexion->conexion->query($sql);
+        $num_rows=mysqli_num_rows($result);
+        if($num_rows==1)
+        {
+
+            $row = mysqli_fetch_array($result);
+            $Busqueda=new obj_trakeo();
+            $Busqueda->setPlaca($row[0]);
+            $Busqueda->setMarca($row[1]);
+            $Busqueda->setColor($row[2]);
+            $Busqueda->setFoto($row[3]);
+            $Busqueda->setIdLugar($row[4]);
+            $Busqueda->setNomLugar($row[5]);
+            $Busqueda->setCodLugar($row[6]);
+            $Busqueda->setLatitud($row[7]);
+            $Busqueda->setLongitud($row[8]);
+            $Busqueda->setFecha($row[9]);
+            $Busqueda->setHora($row[10]);
+            $Busqueda->setVelocidad($row[11]);
+            $Busqueda->setCodicono($row[12]);
+
+            return $Busqueda;
+        }
+        else{
+            return 0;
+        }
+        $this->obj_conexion->cerrar();
+    }
+    public function getBusquedaBy_PlacaBetweenFech($placa,$start_date,$ending_date)
     {
         $this->obj_conexion->conectar();
-        $sql="select * from trakeo WHERE codigo='$codigo'";
+        $sql="select auto.placa,
+                auto.marca,
+                auto.color,
+                auto.foto,
+                lugar.id,
+                lugar.nomLugar,
+                lugar.codLugar,
+                lugar.latitud,
+                lugar.longitud,
+                trakeo.fecha,
+                trakeo.hora,
+                trakeo.velocidad,
+                auto.codicono
+                from auto inner join trakeo on auto.placa=trakeo.placa 
+              inner join lugar on trakeo.codLugar=lugar.id WHERE trakeo.placa='$placa'and trakeo.fecha BETWEEN '$start_date'AND '$ending_date';";
         $result=$this->obj_conexion->conexion->query($sql);
         $num_rows=mysqli_num_rows($result);
         if($num_rows>0)
         {
-            $row=mysqli_fetch_row($result);
-            $trakeo=new obj_trakeo();
-            $trakeo->setCodigo($row[0]);
-            $trakeo->setPlacaT($row[1]);
-            $trakeo->setCodLugarT($row[2]);
-            $trakeo->setFecha($row[3]);
-            $trakeo->setHora($row[4]);
-            $trakeo->setVelocidad($row[5]);
-            return $trakeo;
-        }
-        else{
-            return 0;
-        }
-        $this->obj_conexion->cerrar();
-    }
-    public function getTrakeoByPlaca($placa)
-    {
-        $this->obj_conexion->conectar();
-        $sql="select * from trakeo WHERE placa='$placa'";
-
-        $result=$this->obj_conexion->conexion->query($sql);
-        $num_rows=mysqli_num_rows($result);
-        if($num_rows>0)
-        {   $trakeos=array();
-            while ($row = mysqli_fetch_array($result)) {
-
-                $trakeo=new obj_trakeo();
-                $trakeo->setCodigo($row[0]);
-                $trakeo->setPlacaT($row[1]);
-                $trakeo->setCodLugarT($row[2]);
-                $trakeo->setFecha($row[3]);
-                $trakeo->setHora($row[4]);
-                $trakeo->setVelocidad($row[5]);
-                $trakeos[]=$trakeo;
-
+            $Busquedas=array();
+            while($row = mysqli_fetch_array($result))
+            {
+                $Busqueda=new obj_trakeo();
+                $Busqueda->setPlaca($row[0]);
+                $Busqueda->setMarca($row[1]);
+                $Busqueda->setColor($row[2]);
+                $Busqueda->setFoto($row[3]);
+                $Busqueda->setIdLugar($row[4]);
+                $Busqueda->setNomLugar($row[5]);
+                $Busqueda->setCodLugar($row[6]);
+                $Busqueda->setLatitud($row[7]);
+                $Busqueda->setLongitud($row[8]);
+                $Busqueda->setFecha($row[9]);
+                $Busqueda->setHora($row[10]);
+                $Busqueda->setVelocidad($row[11]);
+                $Busqueda->setCodicono($row[12]);
+                $Busquedas[]=$Busqueda;
             }
-            return $trakeos;
-        }
-        elseif ($num_rows==5){
-            $row=mysqli_fetch_row($result);
-            $trakeo=new obj_trakeo();
-            $trakeo->setCodigo($row[0]);
-            $trakeo->setPlacaT($row[1]);
-            $trakeo->setCodLugarT($row[2]);
-            $trakeo->setFecha($row[3]);
-            $trakeo->setHora($row[4]);
-            $trakeo->setVelocidad($row[5]);
-            return $trakeo;
+            return $Busquedas;
         }
         else{
             return 0;
@@ -73,42 +104,50 @@ class modelo_trakeo
         $this->obj_conexion->cerrar();
     }
 
+    public function getObjConexion()
+    {
 
-    public function getTrakeoByLicencia($licencia){
-        $this->obj_conexion->conectar();
-
-        $sql="SELECT conduce.placa FROM (persona join conduce on persona.licencia=conduce.licencia) where persona.licencia='$licencia'";
-        $result= $this->obj_conexion->conexion->query($sql);
-        if($result){
-            $row=mysqli_fetch_row($result);
-            return $row[0];
-        }
-        else{
-            return 0;
-            echo 'no hay resultados';
-        }
     }
     public function getAll(){
         $this->obj_conexion->conectar();
 
-        $personas=array();
-        $sql="select * from trakeo where 1";
+        $sql="select auto.placa,
+                auto.marca,
+                auto.color,
+                auto.foto,
+                lugar.id,
+                lugar.nomLugar,
+                lugar.codLugar,
+                lugar.latitud,
+                lugar.longitud,
+                trakeo.fecha,
+                trakeo.hora,
+                trakeo.velocidad,
+                auto.codicono
+                from auto inner join trakeo on auto.placa=trakeo.placa 
+              inner join lugar on trakeo.codLugar=lugar.id WHERE 1";
         $result= $this->obj_conexion->conexion->query($sql);
         if($result){
-            while ($row = mysqli_fetch_array($result)) {
-
-                $trakeo=new obj_trakeo();
-                $trakeo->setCodigo($row[0]);
-                $trakeo->setPlacaT($row[1]);
-                $trakeo->setCodLugarT($row[2]);
-                $trakeo->setFecha($row[3]);
-                $trakeo->setHora($row[4]);
-                $trakeo->setVelocidad($row[5]);
-                $trakeos[]=$trakeo;
-
-            }
-            return $personas;
-        }
+                $Busquedas=array();
+                while($row = mysqli_fetch_array($result))
+                {
+                    $Busqueda=new obj_trakeo();
+                    $Busqueda->setPlaca($row[0]);
+                    $Busqueda->setMarca($row[1]);
+                    $Busqueda->setColor($row[2]);
+                    $Busqueda->setFoto($row[3]);
+                    $Busqueda->setIdLugar($row[4]);
+                    $Busqueda->setNomLugar($row[5]);
+                    $Busqueda->setCodLugar($row[6]);
+                    $Busqueda->setLatitud($row[7]);
+                    $Busqueda->setLongitud($row[8]);
+                    $Busqueda->setFecha($row[9]);
+                    $Busqueda->setHora($row[10]);
+                    $Busqueda->setVelocidad($row[11]);
+                    $Busqueda->setCodicono($row[12]);
+                    $Busquedas[]=$Busqueda;
+                }
+                return $Busquedas;        }
         else{
             return 0;
             echo 'no hay resultados';

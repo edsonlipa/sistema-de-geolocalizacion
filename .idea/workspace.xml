@@ -2,11 +2,239 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c380f5-2869-498e-bbe6-d5b08bb7e11a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/img/cars/hyundai.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/img/icono-auto-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/img/icons/icono-auto-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/annotation/test_annotation-magFactor.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/annotation/test_annotation.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/images/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/24_bit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/32_bit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/RGBA_16bpc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/RGB_16bpc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/grayscale_16bpc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/grayscale_8bpc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/grayscale_alpha_16_bpc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/grayscale_alpha_8bpc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/grid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/jpg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/png8_flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/png8_trans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images/tiny_png_indexed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/null-logo-trans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/octocat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/octocat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/outline/test_outline.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/thinking-monkey.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/images/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/media/downloadify.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/001_blankpdf.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/002_twopagedoc.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/002_twopagedoc_oldapi.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/003_demolandscape.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/004_fontsizes.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/005_demofonttypes.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/006_demotestcolors.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/007_demometadata.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/008_demorectangles.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/009_demoliness.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/010_democircles.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/011_multilinetext.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/012_multiplelines.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/013_sillysvgrenderer.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/014_addImage.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/015_splittext.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/generate_informe_trakeos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/SUMMARY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/build.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/dist/jspdf.debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/dist/jspdf.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/files.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/plugins/from_html.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/FontObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/PubSub.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/_global_.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/jsPDF-PubSub.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/jsPDF-jsPDF.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/jsPDF.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/jsPDFClass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/src/c__work_jsPDF_jspdf.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/src/c__work_jsPDF_tools_jspdf.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/doc/symbols/src/jspdf.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/docs/getting_started.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/annotation/test_annotation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/annotation/test_annotation_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/basic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/context2d/test_context2d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/context2d/test_context2d_paths.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/css/smoothness/jquery-ui-1.8.17.custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/downloadify.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/auto_break.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/examples.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/lists.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/page_break.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/pdf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/pdf2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/showcase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/showcase_supported_html.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/html2pdf/total_mess.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/images.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/jaxer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/AcroForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/circles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/font-faces.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/font-size.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/from-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/html2canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/jquery/jquery-1.7.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/jquery/jquery-ui-1.8.17.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/kitchen-sink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/landscape.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/lines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/rectangles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/string-splitting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/test_harness.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/text-colors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/theme-ambiance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/triangles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/two-page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/js/user-input.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/jspdf.PLUGINTEMPLATE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/outline/test_outline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/runner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/test_from_html.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/test_from_html_css_page_breaks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/examples/test_insert_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/jspdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/README.textile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/js/downloadify.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/js/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/src/Downloadify.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/src/com/dynamicflash/util/Base64.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/src/com/dynamicflash/util/tests/Base64Test.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/src/downloadify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/Downloadify/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/css_colors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/deflate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/dist/html2canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/dummyimagecontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/fallback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/font.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/fontmetrics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/framecontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/gradientcontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/imagecontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/imageloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/lineargradientcontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/nodecontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/nodeparser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/promise.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/proxyimagecontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/pseudoelementcontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/renderers/canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/stackingcontext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/svgcontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/svgnodecontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/textcontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/webkitgradientcontainer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2canvas/src/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/html2pdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/png_support/png.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/png_support/zlib.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/polyfill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/require/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/libs/require/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/acroform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/addhtml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/addimage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/annotations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/autoprint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/cell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/context2d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/from_html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/outline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/png_support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/prevent_scale_to_fit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/split_text_to_size.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/standard_fonts_metrics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/svg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/plugins/total_pages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/013_sillysvgrenderer.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/014_addImage.jpeg.base64.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/014_addImage.pdf.base64.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/014_addImage.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/015_splittext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/components_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/index.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/libs/curl-0.5.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/libs/custom_fill.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/libs/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/libs/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/pdf_generate_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/test_from_html_css_page_breaks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/test_harness.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/test/test_min.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jsPDF-1.2.60/todo.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/js/jspdf.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/modelo_busqueda.php" afterPath="$PROJECT_DIR$/Models/modelo_busqueda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php" afterPath="$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/ubicar_auto.php" afterPath="$PROJECT_DIR$/Controllers/ubicar_auto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/modelo_trakeo.php" afterPath="$PROJECT_DIR$/Models/modelo_trakeo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/js/indexmap.js" afterPath="$PROJECT_DIR$/Resources/js/indexmap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/obj_busqueda.php" afterPath="$PROJECT_DIR$/Templates/obj_busqueda.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/obj_trakeo.php" afterPath="$PROJECT_DIR$/Templates/obj_trakeo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" afterPath="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Personas.php" afterPath="$PROJECT_DIR$/Views/Personas.php" />
     </list>
     <ignored path="sistema-de-geolocalizacion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,85 +263,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Lugares.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Lugares.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="184" column="49" lean-forward="false" selection-start-line="184" selection-start-column="49" selection-end-line="184" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/navigator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="3" column="87" lean-forward="false" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modelo_busqueda.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/modelo_busqueda.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="218" column="41" lean-forward="false" selection-start-line="218" selection-start-column="41" selection-end-line="218" selection-end-column="41" />
-              <folding>
-                <marker date="1481125732441" expanded="true" signature="322:644" ph="SELECT perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="1607:1923" ph="SELECT perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="1607:1924" ph="select perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="1924:1984" ph="select perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="2905:3253" ph="SELECT perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="4241:4587" ph="SELECT perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="5591:5969" ph="SELECT perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="6970:7342" ph="SELECT perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="8348:8770" ph="select perso... persona" />
-                <marker date="1481125732441" expanded="true" signature="9717:10123" ph="SELECT perso... persona" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Aplicacion_Estandar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Aplicacion_Estandar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="145" column="51" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexmap.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexmap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/js/indexmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+            <state relative-caret-position="666">
+              <caret line="201" column="110" lean-forward="false" selection-start-line="201" selection-start-column="110" selection-end-line="201" selection-end-column="110" />
               <folding>
-                <marker date="1481131267979" expanded="true" signature="4593:4610" ph="..." />
+                <element signature="n#!!block;n#iniciar#0" expanded="false" />
+                <element signature="n#!!block;n#cleanMap#0" expanded="false" />
+                <element signature="n#!!block;n#set_marcador#0" expanded="false" />
+                <element signature="n#!!block;n#enrutar#0" expanded="false" />
+                <element signature="n#!!block;n#esperar#0" expanded="false" />
+                <element signature="n#!!block;n#crear_lugar#0" expanded="false" />
+                <element signature="n#!!block;n#addMarker#0" expanded="false" />
+                <element signature="n#!!block;n#cancel_marker#0" expanded="false" />
+                <element signature="n#!!block;n#retornar_lugares#0" expanded="false" />
+                <element signature="e#5597#5781#0" expanded="false" />
+                <element signature="e#6595#7059#0" expanded="false" />
+                <element signature="n#!!block;n#set_info#0" expanded="false" />
+                <element signature="n#!!block;n#Show_set_info#0" expanded="false" />
+                <element signature="n#!!block;n#sleep#0" expanded="false" />
+                <element signature="n#!!block;n#descargar_pdf#0" expanded="false" />
+                <element signature="n#!!block;n#CoincidenciasAutos#0" expanded="false" />
+                <element signature="n#!!block;n#escogerAuto#0" expanded="false" />
+                <marker date="1482179564203" expanded="true" signature="4593:4610" ph="..." />
+                <marker date="1482179564203" expanded="true" signature="5809:6583" ph="..." />
+                <marker date="1482179564203" expanded="true" signature="5824:5898" ph="..." />
+                <marker date="1482179564203" expanded="true" signature="5824:6583" ph="..." />
+                <marker date="1482179564203" expanded="true" signature="6018:6069" ph="..." />
+                <marker date="1482179564203" expanded="true" signature="6018:6076" ph="..." />
+                <marker date="1482179564203" expanded="true" signature="6018:6555" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ubicar_auto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/ubicar_auto.php">
+      <file leaf-file-name="generate_informe_trakeos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/generate_informe_trakeos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="738">
+              <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+              <folding>
+                <marker date="1482164386538" expanded="true" signature="307:1665" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="374:1619" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="473:757" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="531:625" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="531:702" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="843:902" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="843:975" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="1061:1352" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="1140:1297" ph="..." />
+                <marker date="1482164386538" expanded="true" signature="1437:1568" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buscar_trakeos_por_licencia.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php">
+      <file leaf-file-name="Aplicacion_Estandar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/Aplicacion_Estandar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="72">
+              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#progress#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#2;n#article#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +343,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sleep</find>
+      <find>$busquedas</find>
+      <find>marcador_de_lugar</find>
+      <find>location</find>
     </findStrings>
+    <replaceStrings>
+      <replace>$trakeos</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -163,12 +382,10 @@
         <option value="$PROJECT_DIR$/Models/conexion.php" />
         <option value="$PROJECT_DIR$/Templates/obj_conduce.php" />
         <option value="$PROJECT_DIR$/Models/prueba de clases.php" />
-        <option value="$PROJECT_DIR$/Templates/obj_trakeo.php" />
         <option value="$PROJECT_DIR$/Models/modelo_lugar.php" />
         <option value="$PROJECT_DIR$/Controllers/buscar_trakeos.php" />
         <option value="$PROJECT_DIR$/Views/login.html" />
         <option value="$PROJECT_DIR$/Models/modelo_conduce.php" />
-        <option value="$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php" />
         <option value="$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php" />
         <option value="$PROJECT_DIR$/Models/modelo_persona.php" />
         <option value="$PROJECT_DIR$/Models/modelo_auto.php" />
@@ -178,12 +395,16 @@
         <option value="$PROJECT_DIR$/pruenba.txt" />
         <option value="$PROJECT_DIR$/Views/Lugares.php" />
         <option value="$PROJECT_DIR$/Controllers/info_markers.php" />
-        <option value="$PROJECT_DIR$/Models/modelo_trakeo.php" />
         <option value="$PROJECT_DIR$/Templates/obj_busqueda.php" />
-        <option value="$PROJECT_DIR$/Controllers/ubicar_auto.php" />
+        <option value="$PROJECT_DIR$/Templates/obj_trakeo.php" />
         <option value="$PROJECT_DIR$/Models/modelo_busqueda.php" />
-        <option value="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" />
+        <option value="$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php" />
+        <option value="$PROJECT_DIR$/Models/modelo_trakeo.php" />
+        <option value="$PROJECT_DIR$/Views/Personas.php" />
+        <option value="$PROJECT_DIR$/Controllers/ubicar_auto.php" />
+        <option value="$PROJECT_DIR$/Controllers/generate_informe_trakeos.php" />
         <option value="$PROJECT_DIR$/Resources/js/indexmap.js" />
+        <option value="$PROJECT_DIR$/Views/Aplicacion_Estandar.php" />
       </list>
     </option>
   </component>
@@ -198,8 +419,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
     <option name="y" value="25" />
-    <option name="width" value="1920" />
+    <option name="width" value="960" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -240,6 +462,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,7 +485,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,10 +500,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,9 +517,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-de-geolocalizacion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistema-de-geolocalizacion" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,8 +543,14 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="PHP Script.usuario.php">
+  <component name="RunManager" selected="JavaScript Debug.Aplicacion_Estandar.php">
     <configuration default="false" name="usuario.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Controllers/usuario.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="indexmap.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="indexmap.js" working-dir="$PROJECT_DIR$/Resources/js">
+      <method />
+    </configuration>
+    <configuration default="false" name="Aplicacion_Estandar.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sistema-de-geolocalizacion/Views/Aplicacion_Estandar.php">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -371,12 +609,16 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.usuario.php" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.indexmap.js" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Aplicacion_Estandar.php" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.usuario.php" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Aplicacion_Estandar.php" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.indexmap.js" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.usuario.php" />
       </list>
     </recent_temporary>
   </component>
@@ -403,35 +645,60 @@
       <workItem from="1469185394852" duration="64905000" />
       <workItem from="1470023788632" duration="2542000" />
       <workItem from="1481089524717" duration="2617000" />
-      <workItem from="1481092545009" duration="16902000" />
+      <workItem from="1481092545009" duration="20196000" />
+      <workItem from="1481411713830" duration="13919000" />
+      <workItem from="1481505886175" duration="2494000" />
+      <workItem from="1481656007525" duration="1513000" />
+      <workItem from="1481660203172" duration="21266000" />
+      <workItem from="1481769607418" duration="35163000" />
+      <workItem from="1482161785184" duration="12481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179454000" />
+    <option name="totallyTimeSpent" value="269584000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1030" extended-state="0" />
+    <frame x="960" y="25" width="960" height="1030" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14233577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4394572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921794" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4394572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921794" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -448,12 +715,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/mili/navigator.php" />
-    <entry file="file://$PROJECT_DIR$/Views/mili/nuevaPersona.php" />
     <entry file="file://$PROJECT_DIR$/Templates/obj_usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -500,13 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/obj_trakeo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -573,24 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/nuevaPersona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="8" selection-start-column="91" selection-end-line="166" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/crear_auto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_auto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -605,14 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="67" column="45" lean-forward="false" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/nuevoLugar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,55 +941,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Lugares.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="184" column="49" lean-forward="false" selection-start-line="184" selection-start-column="49" selection-end-line="184" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/modelo_conduce.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1332">
           <caret line="74" column="60" lean-forward="false" selection-start-line="74" selection-start-column="60" selection-end-line="74" selection-end-column="60" />
-          <folding>
-            <marker date="1481068191742" expanded="true" signature="309:345" ph="select * fro... conduce" />
-            <marker date="1481068191742" expanded="true" signature="939:987" ph="select * fro... conduce" />
-            <marker date="1481068191742" expanded="true" signature="2338:2379" ph="INSERT INTO conduce... " />
-            <marker date="1481068191742" expanded="true" signature="2884:2981" ph="UPDATE condu... " />
-            <marker date="1481068191742" expanded="true" signature="3319:3359" ph="DELETE FROM " />
-            <marker date="1481068191742" expanded="true" signature="3682:3716" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/info_markers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_trakeo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <marker date="1481098285657" expanded="true" signature="325:368" ph="select * fro... trakeo" />
-            <marker date="1481098285657" expanded="true" signature="1075:1116" ph="select * fro... trakeo" />
-            <marker date="1481098285657" expanded="true" signature="2342:2462" ph="SELECT condu... persona" />
-            <marker date="1481098285657" expanded="true" signature="2832:2860" ph="select * fro... trakeo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,73 +952,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-648">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1479602736000" expanded="true" signature="307:341" ph="select * fro... lugar" />
-            <marker date="1479602736000" expanded="true" signature="1168:1229" ph="INSERT INTO lugar... " />
-            <marker date="1479602736000" expanded="true" signature="1834:1990" ph="UPDATE lugar... " />
-            <marker date="1479602736000" expanded="true" signature="2321:2353" ph="DELETE FROM " />
-            <marker date="1479602736000" expanded="true" signature="2678:2715" ph="DELETE FROM " />
-            <marker date="1479602736000" expanded="true" signature="3050:3077" ph="select * fro... lugar" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/navigator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
+        <state relative-caret-position="54">
           <caret line="3" column="87" lean-forward="false" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/obj_busqueda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="86" column="5" lean-forward="false" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/modelo_busqueda.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="218" column="41" lean-forward="false" selection-start-line="218" selection-start-column="41" selection-end-line="218" selection-end-column="41" />
-          <folding>
-            <marker date="1481125732441" expanded="true" signature="322:644" ph="SELECT perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="1607:1923" ph="SELECT perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="1607:1924" ph="select perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="1924:1984" ph="select perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="2905:3253" ph="SELECT perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="4241:4587" ph="SELECT perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="5591:5969" ph="SELECT perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="6970:7342" ph="SELECT perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="8348:8770" ph="select perso... persona" />
-            <marker date="1481125732441" expanded="true" signature="9717:10123" ph="SELECT perso... persona" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/ubicar_auto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Aplicacion_Estandar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="145" column="51" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,20 +966,169 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/obj_busqueda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_licencia.php" />
+    <entry file="file://$PROJECT_DIR$/Models/modelo_busqueda.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="198" column="21" lean-forward="false" selection-start-line="198" selection-start-column="21" selection-end-line="199" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/modelo_auto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="24" />
           <folding>
-            <marker date="1481068191738" expanded="true" signature="6298:6700" ph="..." />
-            <marker date="1481068191738" expanded="true" signature="6324:6469" ph="..." />
-            <marker date="1481068191738" expanded="true" signature="6495:6692" ph="..." />
+            <marker date="1481068191742" expanded="true" signature="305:344" ph="select * fro... auto" />
+            <marker date="1481068191742" expanded="true" signature="1165:1219" ph="INSERT INTO auto... " />
+            <marker date="1481068191742" expanded="true" signature="1799:1948" ph="UPDATE auto " />
+            <marker date="1481068191742" expanded="true" signature="2282:2319" ph="DELETE FROM " />
+            <marker date="1481068191742" expanded="true" signature="2651:2677" ph="select * fro... auto" />
+            <marker date="1481068191742" expanded="true" signature="3383:3427" ph="SELECT * FRO... auto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Lugares.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/nuevoLugar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/obj_trakeo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4644">
+          <caret line="258" column="17" lean-forward="false" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/nuevaPersona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="152" column="16" lean-forward="false" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/buscar_trakeos_por_placa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Personas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="224" column="44" lean-forward="false" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/info_markers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/modelo_trakeo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="138" column="51" lean-forward="false" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="51" />
+          <folding>
+            <marker date="1481726601591" expanded="true" signature="310:939" ph="select auto.... auto" />
+            <marker date="1481726601591" expanded="true" signature="2015:2607" ph="select auto.... auto" />
+            <marker date="1481726601591" expanded="true" signature="3835:4351" ph="select auto.... auto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/ubicar_auto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/generate_informe_trakeos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+          <folding>
+            <marker date="1482164386538" expanded="true" signature="307:1665" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="374:1619" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="473:757" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="531:625" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="531:702" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="843:902" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="843:975" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="1061:1352" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="1140:1297" ph="..." />
+            <marker date="1482164386538" expanded="true" signature="1437:1568" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/js/indexmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
+        <state relative-caret-position="666">
+          <caret line="201" column="110" lean-forward="false" selection-start-line="201" selection-start-column="110" selection-end-line="201" selection-end-column="110" />
           <folding>
-            <marker date="1481131267979" expanded="true" signature="4593:4610" ph="..." />
+            <element signature="n#!!block;n#iniciar#0" expanded="false" />
+            <element signature="n#!!block;n#cleanMap#0" expanded="false" />
+            <element signature="n#!!block;n#set_marcador#0" expanded="false" />
+            <element signature="n#!!block;n#enrutar#0" expanded="false" />
+            <element signature="n#!!block;n#esperar#0" expanded="false" />
+            <element signature="n#!!block;n#crear_lugar#0" expanded="false" />
+            <element signature="n#!!block;n#addMarker#0" expanded="false" />
+            <element signature="n#!!block;n#cancel_marker#0" expanded="false" />
+            <element signature="n#!!block;n#retornar_lugares#0" expanded="false" />
+            <element signature="e#5597#5781#0" expanded="false" />
+            <element signature="e#6595#7059#0" expanded="false" />
+            <element signature="n#!!block;n#set_info#0" expanded="false" />
+            <element signature="n#!!block;n#Show_set_info#0" expanded="false" />
+            <element signature="n#!!block;n#sleep#0" expanded="false" />
+            <element signature="n#!!block;n#descargar_pdf#0" expanded="false" />
+            <element signature="n#!!block;n#CoincidenciasAutos#0" expanded="false" />
+            <element signature="n#!!block;n#escogerAuto#0" expanded="false" />
+            <marker date="1482179564203" expanded="true" signature="4593:4610" ph="..." />
+            <marker date="1482179564203" expanded="true" signature="5809:6583" ph="..." />
+            <marker date="1482179564203" expanded="true" signature="5824:5898" ph="..." />
+            <marker date="1482179564203" expanded="true" signature="5824:6583" ph="..." />
+            <marker date="1482179564203" expanded="true" signature="6018:6069" ph="..." />
+            <marker date="1482179564203" expanded="true" signature="6018:6076" ph="..." />
+            <marker date="1482179564203" expanded="true" signature="6018:6555" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Aplicacion_Estandar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#progress#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#2;n#article#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

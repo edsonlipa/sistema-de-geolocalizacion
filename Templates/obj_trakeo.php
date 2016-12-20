@@ -2,111 +2,260 @@
 
 class obj_trakeo
 {
-    private $codigo;
-    private $placaT;
-    private $codLugarT;
+    private $placa;
+    private $marca;
+    private $color;
+    private $foto;
+    private $idLugar;
+    private $nomLugar;
+    private $codLugar;
+    private $latitud;
+    private $longitud;
     private $fecha;
     private $hora;
     private $velocidad;
+    private $codicono;
+
     function __construct()
     {
-        $this->codigo=null;
-        $this->placaT=null;
-        $this->codLugarT=null;
+        $this->placa=null;
+        $this->marca=null;
+        $this->color=null;
+        $this->foto=null;
+        $this->idLugar=null;
+        $this->nomLugar=null;
+        $this->codLugar=null;
+        $this->latitud=null;
+        $this->longitud=null;
         $this->fecha=null;
         $this->hora=null;
         $this->velocidad=null;
+        $this->codicono=null;
     }
 
-
-    public function getCodigo()
+    /**
+     * @return mixed
+     */
+    public function getPlaca()
     {
-        return $this->codigo;
+        return $this->placa;
     }
 
-
-    public function setCodigo($codigo)
+    /**
+     * @param mixed $placa
+     */
+    public function setPlaca($placa)
     {
-        $this->codigo = $codigo;
+        $this->placa = $placa;
     }
 
-
-    public function getPlacaT()
+    /**
+     * @return mixed
+     */
+    public function getMarca()
     {
-        return $this->placaT;
+        return $this->marca;
     }
 
-    public function setPlacaT($placaT)
+    /**
+     * @param mixed $marca
+     */
+    public function setMarca($marca)
     {
-        $this->placaT = $placaT;
+        $this->marca = $marca;
     }
 
-    public function getCodLugarT()
+    /**
+     * @return mixed
+     */
+    public function getColor()
     {
-        return $this->codLugarT;
+        return $this->color;
     }
 
-    public function setCodLugarT($codLugarT)
+    /**
+     * @param mixed $color
+     */
+    public function setColor($color)
     {
-        $this->codLugarT = $codLugarT;
+        $this->color = $color;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getFoto()
+    {
+        return $this->foto;
+    }
+
+    /**
+     * @param mixed $foto
+     */
+    public function setFoto($foto)
+    {
+        $this->foto = $foto;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdLugar()
+    {
+        return $this->idLugar;
+    }
+
+    /**
+     * @param mixed $idLugar
+     */
+    public function setIdLugar($idLugar)
+    {
+        $this->idLugar = $idLugar;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNomLugar()
+    {
+        return $this->nomLugar;
+    }
+
+    /**
+     * @param mixed $nomLugar
+     */
+    public function setNomLugar($nomLugar)
+    {
+        $this->nomLugar = $nomLugar;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodLugar()
+    {
+        return $this->codLugar;
+    }
+
+    /**
+     * @param mixed $codLugar
+     */
+    public function setCodLugar($codLugar)
+    {
+        $this->codLugar = $codLugar;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLatitud()
+    {
+        return $this->latitud;
+    }
+
+    /**
+     * @param mixed $latitud
+     */
+    public function setLatitud($latitud)
+    {
+        $this->latitud = $latitud;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLongitud()
+    {
+        return $this->longitud;
+    }
+
+    /**
+     * @param mixed $longitud
+     */
+    public function setLongitud($longitud)
+    {
+        $this->longitud = $longitud;
+    }
+
+    /**
+     * @return null
+     */
     public function getFecha()
     {
         return $this->fecha;
     }
 
+    /**
+     * @param null $fecha
+     */
     public function setFecha($fecha)
     {
         $this->fecha = $fecha;
     }
 
+    /**
+     * @return null
+     */
     public function getHora()
     {
         return $this->hora;
     }
 
+    /**
+     * @param null $hora
+     */
     public function setHora($hora)
     {
         $this->hora = $hora;
     }
 
+    /**
+     * @return null
+     */
     public function getVelocidad()
     {
         return $this->velocidad;
     }
 
+    /**
+     * @param null $velocidad
+     */
     public function setVelocidad($velocidad)
     {
         $this->velocidad = $velocidad;
     }
-    public function getLugar()
+
+    /**
+     * @return mixed
+     */
+    public function getCodicono()
     {
-        if ($this->codLugarT){
-            $M_lugar=new modelo_lugar();
-            return $M_lugar->getLugarById($this->codLugarT);
-        }
-        else{
-            return 0;
-        }
+        return $this->codicono;
     }
-    public function getAuto()
+
+    /**
+     * @param mixed $codicono
+     */
+    public function setCodicono($codicono)
     {
-        if ($this->placaT){
-            $M_auto=new modelo_auto();
-            return $M_auto->getAutoByPlaca($this->placaT);
-        }
-        else{
-            return 0;
-        }
+        $this->codicono = $codicono;
     }
+
+
     public function unsetTrakeo()
     {
-        $this->codigo=null;
-        $this->placaT=null;
-        $this->codLugarT=null;
+        $this->placa=null;
+        $this->marca=null;
+        $this->color=null;
+        $this->foto=null;
+        $this->idLugar=null;
+        $this->nomLugar=null;
+        $this->codLugar=null;
+        $this->latitud=null;
+        $this->longitud=null;
         $this->fecha=null;
         $this->hora=null;
         $this->velocidad=null;
+        $this->codicono=null;
     }
 }
