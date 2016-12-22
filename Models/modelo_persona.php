@@ -59,6 +59,62 @@ class modelo_persona
         }
         $this->obj_conexion->cerrar();
     }
+    public function getPersonaByConduce($placa)
+    {
+        $this->obj_conexion->conectar();
+        $sql="SELECT * FROM (conduce LEFT JOIN persona on conduce.licencia=persona.licencia) WHERE placa='$placa'";
+        $result=$this->obj_conexion->conexion->query($sql);
+        $num_rows=mysqli_num_rows($result);
+        if($num_rows>0)
+        {
+            $PersonaS=array();
+            while ($row = mysqli_fetch_array($result)) {
+
+            $persona=new obj_persona();
+            $persona->setLicencia($row[1]);
+            $persona->setNombre($row[4]);
+            $persona->setApellido($row[5]);
+            $persona->setCelular($row[6]);
+            $persona->setDireccion($row[7]);
+            $persona->setEmail($row[8]);
+            $persona->setFoto($row[9]);
+            $PersonaS[]=$persona;
+            }
+            return $PersonaS;
+        }
+        else{
+            return 0;
+        }
+        $this->obj_conexion->cerrar();
+    }
+    public function getPersonaByPropietario($placa)
+    {
+        $this->obj_conexion->conectar();
+        $sql="SELECT * FROM (propietario LEFT JOIN persona on propietario.licencia=persona.licencia) WHERE placa='$placa'";
+        $result=$this->obj_conexion->conexion->query($sql);
+        $num_rows=mysqli_num_rows($result);
+        if($num_rows>0)
+        {
+            $PersonaS=array();
+            while ($row = mysqli_fetch_array($result)) {
+
+            $persona=new obj_persona();
+            $persona->setLicencia($row[1]);
+            $persona->setNombre($row[4]);
+            $persona->setApellido($row[5]);
+            $persona->setCelular($row[6]);
+            $persona->setDireccion($row[7]);
+            $persona->setEmail($row[8]);
+            $persona->setFoto($row[9]);
+            $PersonaS[]=$persona;
+            }
+            return $PersonaS;
+        }
+        else{
+            return 0;
+        }
+        $this->obj_conexion->cerrar();
+    }
     public function agregarPersona(obj_persona $persona){
         $this->obj_conexion->conectar();
         $licencia=$persona->getLicencia();

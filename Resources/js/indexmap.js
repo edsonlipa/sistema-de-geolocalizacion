@@ -158,7 +158,6 @@ function Ubicar_Auto() {
     var datos={
         "placa":document.getElementById('placa_number').value
     };
-    //console.log(datos.placa);
     $.ajax({
         url:'../Controllers/ubicar_auto.php',
         type:'POST',
@@ -199,7 +198,7 @@ function Ubicar_Auto() {
         document.getElementById('report_placa').innerHTML=resp.placa;
 
         document.getElementById('ubi-title').innerHTML=" Ultima Ubicacion al: "+current_date;
-        document.getElementById('Ubi-imagen').style="background-image: url(../Resources/img/cars/hyundai.jpg);";
+        document.getElementById('Ubi-imagen').style="background-image: url(../Resources/img/cars/"+resp.foto+");";
         document.getElementById('Ubi-placa').innerHTML=resp.placa;
         document.getElementById('Ubi-lugar').innerHTML=resp.nomLugar;
         document.getElementById('Ubi-marca').innerHTML=resp.marca;
@@ -212,6 +211,15 @@ function Ubicar_Auto() {
         //document.getElementById('report_trakeos').innerHTML=current_date;
         //document.getElementById('report_C-actuales').innerHTML=current_date;
 
+    });
+    $.ajax({
+        url:'../Controllers/buscar_conductores.php',
+        type:'POST',
+        data:datos
+    }).done(function (conductores) {
+
+        $('#conductores_actuales').prepend(conductores.html);
+        $('#report_C-actuales').prepend(conductores.cantidad);
     });
 }
 function set_info(marker, info) {
@@ -232,8 +240,6 @@ function Show_set_info(marker, info) {
         infowindow.open(marker.get('map'), marker);
     });
 }
-
-
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
@@ -273,7 +279,6 @@ function CoincidenciasAutos() {
         document.getElementById("sugerenciasAutos").innerHTML=resp;
     });
 }
-
 function escogerAuto(id) {
     //alert(document.getElementById("sugerencias").rows[id].cells[0].innerHTML);
     document.getElementById("placa_number").value=document.getElementById("sugerenciasAutos").rows[id].cells[0].innerHTML;

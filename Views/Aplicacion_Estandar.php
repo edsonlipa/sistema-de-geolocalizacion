@@ -98,9 +98,7 @@ session_start();
                                     <button type="button" class="btn-info btn-lg" onclick="buscar();">Buscar</button>
 
                                 </div>
-
                             </div>
-
                         </div>
                     </section>
                     <div class="ql-format-button blockquote-reverse">
@@ -202,25 +200,7 @@ session_start();
                                                     <th>Celular</th>
                                                 </tr>
                                                 </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                <tbody id="conductores_actuales">
                                                 </tbody>
                                             </table>
                                         </section>
@@ -230,6 +210,7 @@ session_start();
                         </div>
                     </section>
                     <section class="section">
+                        <!---------------------------------- informe ultima ubicacion------------------------------------>
                         <div class="card items">
                             <div class="card-header bordered">
                                 <div class="header-block">
@@ -306,6 +287,7 @@ session_start();
                                 </li>
                             </ul>
                         </div>
+                        <!-------------------------------informe trakeos--------------------------------------->
                         <div class="row sameheight-container">
                             <div class="col-xl-12" >
                                 <div class="card sameheight-item items" data-exclude="xs,sm,lg">
@@ -388,7 +370,7 @@ session_start();
         <script src="js/app.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD192AY4NxJxc8m55g4hrWzSAVVd6_XXf4&signed_in=true&callback=iniciar"></script>
-        <script src="../Resources/js/indexmap.js?1"></script>
+        <script src="../Resources/js/indexmap.js?5"></script>
         <script src="../Resources/js/map_function.js"></script>
 
 

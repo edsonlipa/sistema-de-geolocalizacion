@@ -48,7 +48,7 @@ class modelo_conduce
         }
         elseif ($num_rows>1){
             $ConduceS=array();
-            while ($row = mysqli_fetch_array($result)) {
+                while ($row = mysqli_fetch_array($result)) {
 
                 $conduce=new obj_conduce();
                 $conduce->setIdC($row[0]);
@@ -56,7 +56,7 @@ class modelo_conduce
                 $conduce->setPlacaC($row[2]);
                 $ConduceS[]=$conduce;
 
-            }
+                }
             return $ConduceS;
         }
         else{
